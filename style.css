@@ -1,0 +1,62 @@
+@charset "UTF-8";
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header .header__container {
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 0 1 1200px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__container .header__logo {
+  background-image: url("img/header_logo.webp");
+  background-size: cover;
+  width: 198px;
+  height: 58px;
+}
+.header .header__nav {
+  display: flex;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.header .header__nav .headernavitem {
+  padding: 0 20px 0 20px;
+}
+.header .header__social {
+  display: flex;
+}
+.header .header__social .social__itemconteiner {
+  display: flex;
+  padding: 5px;
+  margin: 10px 10px 10px 10px;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+}
+.header .header__social .social__itemimg {
+  width: 20px;
+  height: 20px;
+}
+
+/*Ваши style.css или style.scss нужно указать в ковычках вместо "стили_студента_номер"*/
+/*И кстати нужно пока только html, поэтому стили сюда пока что необязательно*/
+/*ширина рабочей части сайта 1200px - flex: 0 1 1200px;, шрифт - font-family: "Poppins", sans-serif;*/
+/*@import "стили_студента_1";*/
+/*@import "стили_студента_2";*/
+/*@import "стили_студента_3";*/
+/*@import "стили_студента_4";*/
+/*@import "стили_студента_5";*/
+/*@import "стили_студента_6";*/
+/*@import "стили_студента_7";*/
+/*@import "стили_студента_8";*/
+/*@import "стили_студента_9";*/
+/*@import "стили_студента_10";*/
+/*@import "стили_студента_11";*/
+/*@import "стили_студента_12";*/
+
+/*# sourceMappingURL=style.css.map */
