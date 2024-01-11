@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import "common.css";
+@import "why-us.scss";
 .header {
   display: flex;
   justify-content: center;
@@ -60,10 +61,10 @@
   padding-top: 20px;
 }
 .discoveries__brain-wrapper .discoveries__brain-container--first {
-  grid-template: 425px/minmax(300px, 600px);
+  grid-template: 425px / minmax(300px, 600px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container--second {
-  grid-template: 500px/minmax(300px, 450px);
+  grid-template: 500px / minmax(300px, 450px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container {
   display: grid;
@@ -71,16 +72,22 @@
   justify-items: center;
   justify-self: center;
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img--first {
   background-image: url("../img/ratbrain1.webp");
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-text {
   text-align: center;
 }
 .discoveries__brain-wrapper .discoveries__text {
@@ -107,25 +114,33 @@ h1 {
   border: 0;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-:focus, :active {
+:focus,
+:active {
   outline: none;
 }
 
-a:focus, a:active {
+a:focus,
+a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
+nav,
+footer,
+header,
+aside {
   display: block;
 }
 
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
   font-size: 100%;
@@ -136,7 +151,9 @@ html, body {
   -webkit-text-size-adjust: 100%;
 }
 
-input, button, textarea {
+input,
+button,
+textarea {
   font-family: inherit;
 }
 
@@ -153,7 +170,8 @@ button::-moz-focus-inner {
   border: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   text-decoration: none;
 }
 
@@ -169,9 +187,72 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
+}
+
+/*--------------------*/
+
+/* Уявлення не маю як тут працює архітектура, та в мене все працює тільки якщо я пасту свого кода вставлю тож вона поки буде тут(паста з файлу why-us.scss)*/
+.why-choose-us {
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  width: auto;
+  height: auto;
+  font-weight: bold;
+}
+
+.why-choose-us__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.why-choose-us__item {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us__item img {
+  color: rgb(36, 45, 49);
+  width: 100px;
+  height: auto;
+}
+
+.why-choose-us__item h3 {
+  margin-top: 10px;
+}
+
+.why-choose-us__item p {
+  color: gray;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .why-choose-us__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .why-choose-us__items {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*--------------------*/
