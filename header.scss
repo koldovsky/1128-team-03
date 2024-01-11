@@ -1,4 +1,3 @@
-
 .header {
   display: flex;
   justify-content: center;
@@ -25,19 +24,7 @@
     font-size: 14px;
     font-weight: bold;
 
-    .header__nav-services {
-    }
-
-    .header__nav-pricing {
-    }
-
-    .header__nav-testimonials {
-    }
-
-    .header__nav-contactus {
-    }
-
-    .headernavitem {
+    .header__nav-item {
       padding: 0 20px 0 20px;
     }
   }
@@ -45,7 +32,7 @@
   .header__social {
     display: flex;
 
-    .social__itemconteiner {
+    .header__social-item-container {
       display: flex;
       padding: 5px;
       margin: 10px 10px 10px 10px;
@@ -55,7 +42,7 @@
       border-radius: 8px;
     }
 
-    .social__itemimg {
+    .header__img {
       width: 20px;
       height: 20px;
     }

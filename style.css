@@ -23,13 +23,13 @@
   font-size: 14px;
   font-weight: bold;
 }
-.header .header__nav .headernavitem {
+.header .header__nav .header__nav-item {
   padding: 0 20px 0 20px;
 }
 .header .header__social {
   display: flex;
 }
-.header .header__social .social__itemconteiner {
+.header .header__social .header__social-item-container {
   display: flex;
   padding: 5px;
   margin: 10px 10px 10px 10px;
@@ -38,7 +38,7 @@
   height: 20px;
   border-radius: 8px;
 }
-.header .header__social .social__itemimg {
+.header .header__social .header__img {
   width: 20px;
   height: 20px;
 }
