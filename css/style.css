@@ -12,7 +12,7 @@
   align-items: center;
 }
 .header .header__container .header__logo {
-  background-image: url("img/header_logo.webp");
+  background-image: url("../img/header_logo.webp");
   background-size: cover;
   width: 198px;
   height: 58px;
@@ -80,7 +80,7 @@
   height: auto;
 }
 .discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
-  background-image: url("img/ratbrain1.webp");
+  background-image: url("../img/ratbrain1.webp");
 }
 .discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
   text-align: center;
@@ -89,7 +89,7 @@
   display: grid;
 }
 .discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
-  background-image: url("img/ratbrain2.png");
+  background-image: url("../img/ratbrain2.png");
 }
 
 h1 {
