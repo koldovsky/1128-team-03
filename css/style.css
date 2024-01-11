@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import "common.css";
 .header {
   display: flex;
   justify-content: center;
@@ -6,8 +7,8 @@
 .header .header__container {
   padding: 30px 0 30px 0;
   display: flex;
-  flex-wrap: wrap;
   flex: 0 1 1200px;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -19,8 +20,6 @@
 }
 .header .header__nav {
   display: flex;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
   font-weight: bold;
 }
 .header .header__nav .header__nav-item {
@@ -46,8 +45,7 @@
 .discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(350px, 950px);
-  font-family: sans-serif;
+  grid-template-columns: minmax(350px, 800px);
   justify-items: center;
 }
 .discoveries__brain-wrapper .discoveries__title {
@@ -87,6 +85,11 @@
 }
 .discoveries__brain-wrapper .discoveries__text {
   display: grid;
+  font-size: 17px;
+}
+.discoveries__brain-wrapper .discoveries__text > p {
+  margin-bottom: 15px;
+  line-height: 25px;
 }
 .discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
   background-image: url("../img/ratbrain2.png");
@@ -97,21 +100,81 @@ h1 {
   padding: 0;
 }
 
-/*Ваши style.scss нужно указать в ковычках вместо "стили_студента_номер",
- если только css, то в style.css аналогично*/
-/*И кстати нужно пока только html, поэтому стили сюда пока что необязательно*/
-/*ширина рабочей части сайта 1200px - flex: 0 1 1200px;, шрифт - font-family: "Poppins", sans-serif;*/
-/*@import "стили_студента_1";*/
-/*@import "стили_студента_2";*/
-/*@import "стили_студента_3";*/
-/*@import "стили_студента_4";*/
-/*@import "стили_студента_5";*/
-/*@import "стили_студента_6";*/
-/*@import "стили_студента_7";*/
-/*@import "стили_студента_8";*/
-/*@import "стили_студента_9";*/
-/*@import "стили_студента_10";*/
-/*@import "стили_студента_11";*/
-/*@import "стили_студента_12";*/
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 15px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+/*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */

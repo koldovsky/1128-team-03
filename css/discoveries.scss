@@ -1,8 +1,7 @@
 .discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(350px, 950px);
-  font-family: sans-serif;
+  grid-template-columns: minmax(350px, 800px);
   justify-items: center;
 
   .discoveries__title {
@@ -44,12 +43,19 @@
     }
 
     .discoveries__brain-text {
+
       text-align: center;
+
     }
   }
 
   .discoveries__text {
     display: grid;
+    font-size: 17px;
+
+    >p{margin-bottom: 15px;
+      line-height: 25px;
+    }
 
     .discoveries__brain-img--second {
       background-image: url("../img/ratbrain2.png");
