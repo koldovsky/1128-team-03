@@ -43,65 +43,60 @@
   height: 20px;
 }
 
-.discoveries__brainwrapper {
+.discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
   grid-template-columns: minmax(350px, 950px);
   font-family: sans-serif;
   justify-items: center;
 }
-.discoveries__brainwrapper .discoveries__title {
+.discoveries__brain-wrapper .discoveries__title {
   font-size: 48px;
   font-weight: bold;
   text-align: center;
 }
-.discoveries__brainwrapper .discoveries__subtitle {
+.discoveries__brain-wrapper .discoveries__subtitle {
   text-align: center;
   font-size: 20px;
   font-weight: bold;
   padding-top: 20px;
 }
-.discoveries__brainwrapper .imgbrain1 {
+.discoveries__brain-wrapper .discoveries__brain-container--first {
   grid-template: 425px/minmax(300px, 600px);
 }
-.discoveries__brainwrapper .imgbrain2 {
+.discoveries__brain-wrapper .discoveries__brain-container--second {
   grid-template: 500px/minmax(300px, 450px);
 }
-.discoveries__brainwrapper .discoveries__imgbrain {
+.discoveries__brain-wrapper .discoveries__brain-container {
   display: grid;
   padding: 20px 0 20px 0;
   justify-items: center;
   justify-self: center;
 }
-.discoveries__brainwrapper .discoveries__imgbrain .imgbrain__img {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
 }
-.discoveries__brainwrapper .discoveries__imgbrain .brainimg1 {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
   background-image: url("img/ratbrain1.webp");
 }
-.discoveries__brainwrapper .discoveries__imgbrain .imgbrain__text {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
   text-align: center;
 }
-.discoveries__brainwrapper .discoveries__text {
+.discoveries__brain-wrapper .discoveries__text {
   display: grid;
 }
-.discoveries__brainwrapper .discoveries__text .brainimg2 {
+.discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
   background-image: url("img/ratbrain2.png");
 }
+
 h1 {
   margin: 0;
   padding: 0;
 }
 
-/*justify-items: center;
-justify-self: center;
-align-items: center;
-align-self: center;
-align-content: center;
-justify-content: center;*/
 /*Ваши style.scss нужно указать в ковычках вместо "стили_студента_номер",
  если только css, то в style.css аналогично*/
 /*И кстати нужно пока только html, поэтому стили сюда пока что необязательно*/
