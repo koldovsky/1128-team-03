@@ -1,0 +1,261 @@
+@charset "UTF-8";
+@import "common.css";
+@import "why-us.scss";
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header .header__container {
+  padding: 30px 0 30px 0;
+  display: flex;
+  flex: 0 1 1200px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .header__container .header__logo {
+  background-image: url("../img/header_logo.webp");
+  background-size: cover;
+  width: 198px;
+  height: 58px;
+}
+.header .header__nav {
+  display: flex;
+  font-weight: bold;
+}
+.header .header__nav .header__nav-item {
+  padding: 0 20px 0 20px;
+}
+.header .header__social {
+  display: flex;
+}
+.header .header__social .header__social-item-container {
+  display: flex;
+  padding: 5px;
+  margin: 10px 10px 10px 10px;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+}
+.header .header__social .header__img {
+  width: 20px;
+  height: 20px;
+}
+
+.discoveries__brain-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(350px, 800px);
+  justify-items: center;
+}
+.discoveries__brain-wrapper .discoveries__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.discoveries__brain-wrapper .discoveries__subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.discoveries__brain-wrapper .discoveries__brain-container--first {
+  grid-template: 425px / minmax(300px, 600px);
+}
+.discoveries__brain-wrapper .discoveries__brain-container--second {
+  grid-template: 500px / minmax(300px, 450px);
+}
+.discoveries__brain-wrapper .discoveries__brain-container {
+  display: grid;
+  padding: 20px 0 20px 0;
+  justify-items: center;
+  justify-self: center;
+}
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img--first {
+  background-image: url("../img/ratbrain1.webp");
+}
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-text {
+  text-align: center;
+}
+.discoveries__brain-wrapper .discoveries__text {
+  display: grid;
+  font-size: 17px;
+}
+.discoveries__brain-wrapper .discoveries__text > p {
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+.discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
+  background-image: url("../img/ratbrain2.png");
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 15px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+
+/* Уявлення не маю як тут працює архітектура, та в мене все працює тільки якщо я пасту свого кода вставлю тож вона поки буде тут(паста з файлу why-us.scss)*/
+.why-choose-us {
+  text-align: center;
+}
+
+.why-choose-us h2 {
+  width: auto;
+  height: auto;
+  font-weight: bold;
+}
+
+.why-choose-us__items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+}
+
+.why-choose-us__item {
+  text-align: left;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-choose-us__item img {
+  color: rgb(36, 45, 49);
+  width: 100px;
+  height: auto;
+}
+
+.why-choose-us__item h3 {
+  margin-top: 10px;
+}
+
+.why-choose-us__item p {
+  color: gray;
+  max-width: 100%;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .why-choose-us__items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .why-choose-us__items {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*--------------------*/
+/*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
+
+/*# sourceMappingURL=style.css.map */

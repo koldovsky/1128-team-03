@@ -1,10 +1,8 @@
-.discoveries__brainwrapper {
+.discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(350px, 950px);
-  font-family: sans-serif;
+  grid-template-columns: minmax(350px, 800px);
   justify-items: center;
-
 
   .discoveries__title {
     font-size: 48px;
@@ -19,46 +17,48 @@
     padding-top: 20px;
   }
 
-  .imgbrain1 {
+  .discoveries__brain-container--first {
     grid-template: 425px / minmax(300px, 600px);
   }
 
-  .imgbrain2 {
+  .discoveries__brain-container--second {
     grid-template: 500px / minmax(300px, 450px);
   }
 
-  .discoveries__imgbrain {
+  .discoveries__brain-container {
     display: grid;
     padding: 20px 0 20px 0;
     justify-items: center;
     justify-self: center;
 
-    .imgbrain__img {
+    .discoveries__brain-img {
       background-size: contain;
       background-repeat: no-repeat;
       width: 100%;
       height: auto;
     }
 
-    .brainimg1 {
-      background-image: url("img/ratbrain1.webp");
+    .discoveries__brain-img--first {
+      background-image: url("../img/ratbrain1.webp");
     }
 
-    .imgbrain__text {
+    .discoveries__brain-text {
+
       text-align: center;
+
     }
   }
 
   .discoveries__text {
     display: grid;
+    font-size: 17px;
 
-    .brainimg2 {
-
-      background-image: url("img/ratbrain2.png");
-
+    >p{margin-bottom: 15px;
+      line-height: 25px;
     }
 
-    p {
+    .discoveries__brain-img--second {
+      background-image: url("../img/ratbrain2.png");
     }
 
   }
@@ -69,9 +69,3 @@ h1 {
   padding: 0;
 }
 
-/*justify-items: center;
-justify-self: center;
-align-items: center;
-align-self: center;
-align-content: center;
-justify-content: center;*/
