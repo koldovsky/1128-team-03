@@ -1,0 +1,7 @@
+.pricing {
+    margin:0;
+}
+
+.pricing__title {
+    color: var(--title-color);
+}

@@ -3,6 +3,7 @@
 :root {
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
+    --title-color: #519ac9;
 }
 body {
     display: grid;

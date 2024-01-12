@@ -1,7 +1,6 @@
 @charset "UTF-8";
 @import "common.css";
-@import "why-us.scss";
-
+@import "pricing.css";
 .header {
   display: flex;
   justify-content: center;
@@ -62,10 +61,10 @@
   padding-top: 20px;
 }
 .discoveries__brain-wrapper .discoveries__brain-container--first {
-  grid-template: 425px / minmax(300px, 600px);
+  grid-template: 425px/minmax(300px, 600px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container--second {
-  grid-template: 500px / minmax(300px, 450px);
+  grid-template: 500px/minmax(300px, 450px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container {
   display: grid;
@@ -73,22 +72,16 @@
   justify-items: center;
   justify-self: center;
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-img {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: auto;
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-img--first {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
   background-image: url("../img/ratbrain1.webp");
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-text {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
   text-align: center;
 }
 .discoveries__brain-wrapper .discoveries__text {
@@ -199,8 +192,6 @@ h6 {
 }
 
 /*--------------------*/
-
-/* Уявлення не маю як тут працює архітектура, та в мене все працює тільки якщо я пасту свого кода вставлю тож вона поки буде тут(паста з файлу why-us.scss)*/
 .why-choose-us {
   text-align: center;
 }
@@ -249,14 +240,22 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media only screen and (max-width: 480px) {
   .why-choose-us__items {
     grid-template-columns: 1fr;
   }
 }
+.footer__nav {
+  display: flex;
+}
+.footer__nav-item {
+  display: inline-block;
+  margin-right: 5px;
+}
+.footer__nav-item:last-child {
+  margin-right: 0;
+}
 
-/*--------------------*/
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */
