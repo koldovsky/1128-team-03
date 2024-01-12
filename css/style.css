@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import "common.css";
 @import "why-us.scss";
-@import "pricing.css"
+
 
 .header {
   display: flex;
