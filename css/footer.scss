@@ -1,0 +1,14 @@
+.footer {
+  &__nav {
+    display: flex;
+
+    &-item {
+      display: inline-block;
+      margin-right: 5px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
