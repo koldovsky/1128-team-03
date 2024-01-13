@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
-@import url()
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
 
 :root {
     font-family: "Poppins", sans-serif;
+    font-family: "Signika", sans-serif;
     scroll-behavior: smooth;
     --title-color: #519ac9;
     --subtitle-color: #242D31;
