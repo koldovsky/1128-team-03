@@ -1,16 +1,43 @@
 .pricing {
     margin:0;
-    padding:60 24 50 24;
+    padding:60px 0 50 0;
+    display: flex;
 }
 
 .pricing__content {
+    padding: 0 24px;
+    
+}
+
+.pricing__info {
     padding: 0 15px;
 }
 
-/*
-@media (min-width: 500px) {
-    display: flex;
-}*/
+/*Pricing schedule two columns*/
+@media (min-width: 767px) {
+    .pricing__schedule {
+        display: flex; 
+    } 
+    .pricing__day, .pricing.time {
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/*Pricing plan two columns*/
+@media (min-width: 768px) {
+    .pricing__plan {
+        display: flex; 
+    } 
+    .pricing__details {
+        flex-direction: row;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
 
 .pricing__title {
 color: var(--title-color);
@@ -40,6 +67,8 @@ margin-top: 20px;
 .pricing__schedule {
     margin-top: 20px;
     margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
 }
 .pricing__day > p {
     margin-bottom: 5px;
@@ -56,9 +85,19 @@ margin-top: 20px;
     color: var(--subtext-color);
 }
 
+.arrow-svg_1j4 {
+    background-color: var(--svg-bg-color);
+    /*color: var(--svg-text-color); arrow inside should be white*/
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+}
 .pricing__plan {
+    display: flex;
+    flex-direction: column;
     margin-top: 30px;
     padding: 31px;
+    background-color: var(--pricingcard-bg-color);
 }
 
 .pricing__plan-title {
@@ -95,16 +134,37 @@ margin-top: 20px;
     color: var(--text-color);
 }
 
+.pricing__button {
+    margin-top: 20px;
+}
+
+.pricing__button:hover {
+background-color: var(--select-hover-color);
+}
+
+.pricing__button:active {
+background-color: var(--select-active-color);
+}
+
+.pricing__button:visited{
+    background-color: var(--select-visited-color);
+}
+
 .pricing__select-plan {
     font-size: 0,675rem;
     font-family: "Poppins", sans-serif;
-    color: var(--button-link-color);
-    background-color: var(--text-color);
+    color: var(--button-text-color);
+    background-color: var(--bn-select-color);
     text-decoration: none;
     text-align: center;
+    font-weight: bold;
     display: inline-block;
     border-radius: 5px;
     padding: 16px 24px;
     margin: 10px;
     cursor: pointer;
+    border: 1,6px solid var(--select-border-color);
 }
+
+
+
