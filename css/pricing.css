@@ -1,7 +1,67 @@
 .pricing {
     margin:0;
+    padding: 0 9px;
 }
 
+.pricing__content {
+    padding: 0 15px;
+}
 .pricing__title {
     color: var(--title-color);
+
+}
+
+/*
+@media (min-width: 500px) {
+    display: flex;
+}*/
+
+.pricing__title {
+color: var(--title-color);
+font-size: 12px;
+text-align: left;
+font-weight: bold;
+font-family: inherit;
+}
+
+.pricing__subtitle {
+font-size: 34px;
+color: var(--subtitle-color);
+text-align: left;
+font-weight: bold;
+font-family: "Signika", sans-serif;
+margin-top: 20px;
+}
+
+.pricing__description {
+    color: var(--text-color);
+    font-size: 16px;
+    text-align: justify;
+    margin-top: 25px;
+    font-family: inherit;
+}
+
+.pricing__schedule {
+    margin-top: 20px;
+    /*margin-bottom: 16px;*/ 
+}
+.pricing__day > p {
+    margin-bottom: 5px;
+    color: var(--subtext-color);
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+}
+
+.pricing__price {
+    font-size: 34px;
+    font-family: inherit;
+    font-weight: bold;
+    color: var(--subtext-color);
+}
+
+.pricing__plan-title {
+    font-size: 22px;
+    font-family: "Signika", sans-serif;
+    color: var(--subtitle-color);
 }
