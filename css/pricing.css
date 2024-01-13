@@ -1,14 +1,10 @@
 .pricing {
     margin:0;
-    padding: 0 9px;
+    padding:60 24 50 24;
 }
 
 .pricing__content {
     padding: 0 15px;
-}
-.pricing__title {
-    color: var(--title-color);
-
 }
 
 /*
@@ -18,14 +14,14 @@
 
 .pricing__title {
 color: var(--title-color);
-font-size: 12px;
+font-size: 0,75rem;
 text-align: left;
 font-weight: bold;
 font-family: inherit;
 }
 
 .pricing__subtitle {
-font-size: 34px;
+font-size: 2,125rem;
 color: var(--subtitle-color);
 text-align: left;
 font-weight: bold;
@@ -35,7 +31,7 @@ margin-top: 20px;
 
 .pricing__description {
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 1rem;
     text-align: justify;
     margin-top: 25px;
     font-family: inherit;
@@ -43,35 +39,44 @@ margin-top: 20px;
 
 .pricing__schedule {
     margin-top: 20px;
-    /*margin-bottom: 16px;*/ 
+    margin-bottom: 16px;
 }
 .pricing__day > p {
     margin-bottom: 5px;
     color: var(--subtext-color);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     font-family: inherit;
 }
 
 .pricing__price {
-    font-size: 34px;
+    font-size: 2,125rem;
     font-family: inherit;
     font-weight: bold;
     color: var(--subtext-color);
 }
 
+.pricing__plan {
+    margin-top: 30px;
+    padding: 31px;
+}
+
 .pricing__plan-title {
-    font-size: 22px;
+    font-size: 1,375rem;
     font-family: "Signika", sans-serif;
     color: var(--subtitle-color);
+    margin-top: 25px;
 }
 
 .pricing__time > p {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
 }
 
+.pricin__features {
+    margin-top: 20px;
+}
 .pricing__features-checkmark {
     color: var(--title-color);
     height: 16px;
@@ -85,13 +90,13 @@ margin-top: 20px;
 }
 
 .pricing__features > li {
-    font-size: 16px;
+    font-size: 1rem;
     font-family: "Poppins", sans-serif;
     color: var(--text-color);
 }
 
 .pricing__select-plan {
-    font-size: 10,8px;
+    font-size: 0,675rem;
     font-family: "Poppins", sans-serif;
     color: var(--button-link-color);
     background-color: var(--text-color);

@@ -2,16 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Signika:wght@600&display=swap');
 
 :root {
-    font-family: "Poppins", sans-serif;
-    font-family: "Signika", sans-serif;
-    scroll-behavior: smooth;
     --title-color: #519ac9;
     --subtitle-color: #242D31;
     --text-color: #647A81;
     --subtext-color: #235565;
     --crossmark-color: #6f6f72;
     --button-link-color: #fff;
-    
+    font-family: "Poppins", sans-serif;
+    font-family: "Signika", sans-serif;
+    scroll-behavior: smooth;
 }
 body {
     display: grid;
