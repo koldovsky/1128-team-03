@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "common.css";
 @import "pricing.css";
+@import "faq.css";
 .header {
   display: flex;
   justify-content: center;

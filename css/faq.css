@@ -1,0 +1,59 @@
+.faq__default-answers__title {
+    color: rgb(81, 154, 201);
+    font-family: Poppins, sans-serif;
+    font-size: 12px;
+    font-weight:700;
+    letter-spacing: 0.36px;
+    line-height: 21.84px;
+}
+.faq__default-answers__headline {
+    color: rgb(36, 45, 49);
+    font-family: Signika, sans-serif;
+    font-size: 41px;
+    font-weight: 600;
+    line-height: 49.2px;
+    margin-top: 20px;
+}
+.faq__default-answers__caption {
+    color: rgb(100, 122, 129);
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+.faq__default-answers__quastion {
+    color: rgb(100, 122, 129);
+    font-family: Signika, sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 31.5px;
+}
+.faq__default-answers__answer {
+    color: rgb(100, 122, 129);
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    margin-top: 20px;
+}
+.faq__default-answers__item{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.faq__default-answers {
+    width: 434.6px;
+}
+.faq__animals-photo-list {
+    width: 435px;
+}
+.faq__animals-photo-item {
+    font-weight: 400;
+    height: 413.638px;
+}
+hr {
+    height: 0.5px;
+    background-color: rgb(100, 122, 129);;
+    border-color: rgb(100, 122, 129);;
+  }
