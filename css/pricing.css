@@ -1,6 +1,72 @@
 .pricing {
     display: flex;
-    margin: auto;
-    max-width: 1200px;
+    margin: 0;
+}
+
+.pricing__info {
+    width: 400px;
+    height: 527px;
+    margin: 0 15px;
+    box-sizing: border-box;
+    padding: 60px 24px 50px;
+    border: 1px solid black; /*romove it later*/
+}
+.pricing__title {
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 0,75 rem;
+    font-weight: bold;
+  
+}
+
+.pricing__subtitle {
+    color: var(--subtitle-color);
+    font-size: 40px;
+    line-height: normal;
+    font-family: "Signika", sans-serif;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.pricing__description {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+    line-height: normal;
+}
+
+.pricing__schedule {
+    display: flex;
+    justify-content:left;
+    margin-top: 20px;
+}
+
+.pricing__day {
+    color: var(--subtext-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1 rem;
+    font-weight: bold;
+}
+
+.pricing__day p:nth-child(-n+2) {
+    padding: 8px 15px 8px 0;
+}
+
+.pricing__day p:last-child {
+    padding: 8px 15px 0 0;
+}
+
+.pricing__time {
+    color: var(--time-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1 rem;
+}
+
+.pricing__time p:nth-child(-n+2) {
+    padding: 8px 0 8px 15px;
+}
+.pricing__time p:last-child {
+    padding: 8px 0 0 15px;
 }
 
