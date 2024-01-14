@@ -9,7 +9,7 @@
     margin: 0 15px;
     box-sizing: border-box;
     padding: 60px 24px 50px;
-    border: 1px solid black; /*romove it later*/
+    border: 1px solid black; /*later to do border none*/
 }
 .pricing__title {
     color: var(--title-color);
@@ -70,3 +70,71 @@
     padding: 8px 0 0 15px;
 }
 
+.pricing__price {
+    color: var(--price-color);
+    font-size: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+.pricing__plan-title {
+    color: var(--plan-title-color);
+    font-family: "Signika", sans-serif;
+    font-size: 1,5rem;
+    margin-top: 25px;
+}
+
+.pricing__features {
+    color: var(--price-features-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+.pricing__features-checkmark {
+    color: var(--checkmark-color);
+    height: 20px;
+    width: 24px;
+}
+.pricing__features-crossmark {
+    color: var(--crossmark-color);
+    height: 20px;
+    width: 24px;
+}
+
+.pricing__details {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pricing__details-card {
+    height:400px;
+    width: 447px;
+    background-color: var(--details-card-bg-color);
+    border: 1px solid black; /*later border none*/
+    padding: 40px;
+    margin: 0 15px;
+    box-sizing: border-box;
+}
+
+.pricing__select-button {
+    margin-top: 20px;
+}
+
+.pricing__select-plan {
+    background-color: var(--bn-select-color);
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 0,675rem;   
+    font-family: "Poppins", sans-serif;
+    color: var(--button-text-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 24px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.pricing__select-bn-content {
+    padding-right: 32px;
+}
