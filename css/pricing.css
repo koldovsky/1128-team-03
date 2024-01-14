@@ -115,6 +115,18 @@ ul li {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.arrow-svg {
+    transform: rotateY(180deg);
+}
+
+.pricing__arrow {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    fill: var(--svg-arrow-color);
+    background-color: var(--svg-bg-color);
+}
+
 .pricing__details-card {
     height:447px;
     width: 400px;
