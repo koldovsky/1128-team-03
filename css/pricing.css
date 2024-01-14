@@ -85,11 +85,12 @@
 }
 
 .pricing__features {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
 }
 
-.pricing__features-list {
+ul li {
     color: var(--price-features-color);
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
@@ -97,12 +98,13 @@
     margin-top: 20px;
 }
 
+/*
 .pricing__features-checkmark, .pricing__features-crossmark {
     margin-right: 10px;
     display: flex;
     flex-direction: column;
     justify-content: left;
-}
+}*/
 
 .pricing__features-checkmark {
     color: var(--checkmark-color);
