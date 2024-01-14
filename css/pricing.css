@@ -85,24 +85,23 @@
 }
 
 .pricing__features {
+    display: flex;
+    flex-direction: row;
+}
+
+.pricing__features-list {
     color: var(--price-features-color);
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-   /* margin-top: 20px; flex code from here
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-}
-
-.pricing__features li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;*/
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .pricing__features-checkmark, .pricing__features-crossmark {
     margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
 }
 
 .pricing__features-checkmark {
@@ -116,10 +115,12 @@
     width: 24px;
 }
 
+/*
 .pricing__details {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-}
+}*/
 
 .pricing__details-card {
     height:400px;
@@ -129,6 +130,7 @@
     padding: 40px;
     margin: 0 15px;
     box-sizing: border-box;
+    
 }
 
 .pricing__select-button {
