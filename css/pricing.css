@@ -98,14 +98,6 @@ ul li {
     margin-top: 20px;
 }
 
-/*
-.pricing__features-checkmark, .pricing__features-crossmark {
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-}*/
-
 .pricing__features-checkmark {
     color: var(--checkmark-color);
     height: 20px;
@@ -117,26 +109,26 @@ ul li {
     width: 24px;
 }
 
-/*
-.pricing__details {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}*/
+.pricing__plan {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
 .pricing__details-card {
-    height:400px;
-    width: 447px;
+    height:447px;
+    width: 400px;
     background-color: var(--details-card-bg-color);
     border: 1px solid black; /*later border none*/
     padding: 40px;
     margin: 0 15px;
     box-sizing: border-box;
-    
 }
 
 .pricing__select-button {
     margin-top: 20px;
+    display: flex;
+    justify-content: left;
 }
 
 .pricing__select-plan {
