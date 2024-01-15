@@ -258,9 +258,20 @@ h6 {
 }
 /* CSS for Banner Part */
 
-@media (max-width: 800px){
-  .banner__secondblock--heading, .banner__secondblock--secondparagraph {
+@media (max-width: 768px){
+  .banner {
     text-align: left;
+  }
+  .banner__paragraph,
+  .banner__secondblock--heading,
+  .banner__secondblock--secondparagraph {
+    font-size: 16px; 
+  }
+
+  .button__banner--pagedown,
+  .button__banner--tel {
+    width: 100%; 
+    margin-bottom: 10px; 
   }
 }
 .banner__secondblock--heading{
