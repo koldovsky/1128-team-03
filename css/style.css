@@ -268,6 +268,9 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+.footer {
+  background-color: aqua;
+}
 .footer__nav {
   display: flex;
 }
@@ -277,6 +280,8 @@ h1 {
 }
 .footer__nav-item:last-child {
   margin-right: 0;
-} /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
+}
+
+/*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */
