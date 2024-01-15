@@ -1,84 +1,100 @@
 .faq__default-answers__title {
-    color: rgb(81, 154, 201);
-    font-family: Poppins, sans-serif;
-    font-size: 12px;
-    font-weight:700;
-    letter-spacing: 0.36px;
-    line-height: 21.84px;
+  color: rgb(81, 154, 201);
+  font-family: Poppins, sans-serif;
+  font-size: 12px;
+  font-weight:700;
+  letter-spacing: 0.36px;
+  line-height: 21.84px;
 }
 .faq__default-answers__headline {
-    color: rgb(36, 45, 49);
-    font-family: Signika, sans-serif;
-    font-size: 41px;
-    font-weight: 600;
-    line-height: 49.2px;
-    margin-top: 20px;
+  color: rgb(36, 45, 49);
+  font-family: Signika, sans-serif;
+  font-size: 41px;
+  font-weight: 600;
+  line-height: 49.2px;
+  margin-top: 20px;
 }
 .faq__default-answers__caption {
-    color: rgb(100, 122, 129);
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.6px;
-    margin-top: 25px;
-    margin-bottom: 20px;
+  color: rgb(100, 122, 129);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .faq__default-answers__quastion {
-    color: rgb(100, 122, 129);
-    font-family: Signika, sans-serif;
-    font-size: 21px;
-    font-weight: 600;
-    line-height: 31.5px;
-    text-align: left;
-    width: 75%;
+  color: rgb(100, 122, 129);
+  font-family: Signika, sans-serif;
+  font-size: 21px;
+  font-weight: 600;
+  line-height: 31.5px;
+  text-align: left;
+  width: 75%;
 }
 .faq__default-answers__answer {
-    color: rgb(100, 122, 129);
-    font-family: Poppins, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 25.6px;
-    margin-top: 20px;
+  color: rgb(100, 122, 129);
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  margin-top: 20px;
 }
 .faq__default-answers__item{
-    padding-top: 20px;
-    padding-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .faq__default-answers {
-    width: 434.6px;
+max-width: 19.4rem;
+padding-left: 24px;
 }
 .faq__animals-photo-list {
-    width: 435px;
+  max-width: 19.4rem;
+  padding-left: 24px;
 }
 .faq__animals-photo-item {
-    font-weight: 400;
-    height: 413.638px;
+  max-width: 17rem;
 }
 hr {
-    height: 0.5px;
-    background-color: rgb(100, 122, 129);;
-    border-color: rgb(100, 122, 129);;
-  }
+  height: 0.5px;
+  background-color: rgb(100, 122, 129);;
+  border-color: rgb(100, 122, 129);;
+}
+.faq__all-block {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.faq__default-answers__show-aswer {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: right;
+  width: 25%;
+}
+.faq__animals-photo-next, .faq__animals-photo-previous {
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  height: 20px;
+  width: 20px;
+}
+.faq__animals-photo-previous {
+transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+}
+.faq__default-answers__item__inline{
+display: flex;
+}
+@media (min-width: 768px){
   .faq__all-block {
-    display: flex;
-    gap: 30px;
-    justify-content: center;
-    align-items: center;
+    flex-direction: row;
   }
-  .faq__default-answers__show-aswer {
-    background-color: rgba(0, 0, 0, 0);
-    text-align: right;
-    width: 25%;
+  .faq__animals-photo-list {
+    max-width: 34.1rem;
   }
-  .faq__animals-photo-next, .faq__animals-photo-previous {
-    background-color: rgba(0, 0, 0, 0);
-    color: black;
-    height: 20px;
-    width: 20px;
+  .faq__animals-photo-item {
+    max-width: 34.1rem;
   }
-  .faq__animals-photo-previous {
-    transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+  .faq__default-answers {
+    max-width: 34.1rem;
   }
-  .faq__default-answers__item__inline{
-    display: flex;
-  }
+}
