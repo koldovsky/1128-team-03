@@ -268,7 +268,38 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
+/* Banner CSS */
+@media (max-width: 768px) {
+  .banner {
+    text-align: left;
+  }
+  .banner__paragraph,
+  .banner__secondblock--heading,
+  .banner__secondblock--secondparagraph {
+    font-size: 16px; 
+  }
 
+  .button__banner--pagedown,
+  .button__banner--tel {
+    width: 100%; 
+    margin-bottom: 10px; 
+  }
+}
+.banner__secondblock--heading{
+  color: #242d31;
+  font-size:50px;
+  font-family: Signika;
+}
+.banner__secondblock--secondparagraph{
+  color: #647A81;
+  font-size:18px;
+  font-family: Poppins;
+}
+.banner__paragraph{
+  color: #519AC9;
+  font-size: 12px;
+  font-family: Poppins;
+}
 /*--------------------*/
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
