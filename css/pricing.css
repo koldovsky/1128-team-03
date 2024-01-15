@@ -84,10 +84,31 @@
     margin-top: 25px;
 }
 
+/* grid for list
 .pricing__features {
     display: grid;
     grid-template-columns: auto 1fr;
     align-items: center;
+}*/ 
+ul.pricing__features {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul.pricing__features li {
+    padding-left: 24px;
+    margin-bottom: 8px;
+    position: relative;
+}
+
+ul.pricing__features li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50% /*6px*/;
+    width: 20px;
+    height: 24px;
+    transform: translateY(-50%);
 }
 
 ul li {
@@ -98,15 +119,19 @@ ul li {
     margin-top: 20px;
 }
 
-.pricing__features-checkmark {
+.pricing__features-checkmark::before {
     color: var(--checkmark-color);
-    height: 20px;
-    width: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 47 44' style='background-color: %23ffffff00; max-width: 100%25' version='1.1' xml:space='preserve' x='0px' y='0px' height='100%25'%3E%3Cg fill='currentColor'%3E%3Cg fill='currentColor'%3E%3Cg fill='currentColor'%3E%3Cpath d='M 19.367 39.1001 C 18.4299 39.1001 17.4952 38.7263 16.8057 37.9874 L 6.8044 27.2678 C 5.4863 25.8544 5.5635 23.6411 6.9777 22.3233 C 8.3915 21.0061 10.6066 21.0832 11.9251 22.4966 L 21.9265 33.2162 C 23.2445 34.6295 23.1674 36.8424 21.7531 38.1601 C 21.0787 38.7887 20.2216 39.1001 19.367 39.1001 Z' fill='currentColor'%3E%3C/path%3E%3C/g%3E%3Cg fill='currentColor'%3E%3Cpath d='M 19.3631 39.1001 C 18.6667 39.1001 17.964 38.8932 17.3517 38.4627 C 15.7704 37.3509 15.3909 35.1684 16.5034 33.5881 L 35.5059 6.6008 C 36.6183 5.0209 38.8012 4.6407 40.3835 5.753 C 41.9637 6.8648 42.3437 9.0474 41.2312 10.6272 L 22.2288 37.6154 C 21.5475 38.5828 20.4634 39.1001 19.3631 39.1001 Z' fill='currentColor'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
-.pricing__features-crossmark {
+
+/*
+.pricing__features-checkmark::before {
+    color: red;
+}*/
+
+.pricing__features-crossmark::before {
     color: var(--crossmark-color);
-    height: 20px;
-    width: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' version='1.1' x='0px' y='0px' viewBox='0 0 1000 1000' style='enable-background: new 0 0 1000 1000; max-width: 100%25' xml:space='preserve' height='100%25'%3E%3Cpath d='M620.4,500l177.4-177.4c33.1-33.1,33.1-87.3,0-120.4l0,0c-33.1-33.1-87.3-33.1-120.4,0L500,379.6L322.6,202.2 c-33.1-33.1-87.3-33.1-120.4,0l0,0c-33.1,33.1-33.1,87.3,0,120.4L379.6,500L202.2,677.4c-33.1,33.1-33.1,87.3,0,120.4l0,0 c33.1,33.1,87.3,33.1,120.4,0L500,620.4l177.4,177.4c33.1,33.1,87.3,33.1,120.4,0l0,0c33.1-33.1,33.1-87.3,0-120.4L620.4,500z' fill='currentColor'%3E%3C/path%3E%3C/svg%3E"); 
 }
 
 .pricing__plan {
