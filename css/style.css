@@ -1,108 +1,8 @@
 @charset "UTF-8";
+/*Обнуление*/
 @import "common.css";
 @import "pricing.css";
 @import "faq.css";
-.header {
-  display: flex;
-  justify-content: center;
-}
-.header .header__container {
-  padding: 30px 0 30px 0;
-  display: flex;
-  flex: 0 1 1200px;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .header__container .header__logo {
-  background-image: url("../img/header_logo.webp");
-  background-size: cover;
-  width: 198px;
-  height: 58px;
-}
-.header .header__nav {
-  display: flex;
-  font-weight: bold;
-}
-.header .header__nav .header__nav-item {
-  padding: 0 20px 0 20px;
-}
-.header .header__social {
-  display: flex;
-}
-.header .header__social .header__social-item-container {
-  display: flex;
-  padding: 5px;
-  margin: 10px 10px 10px 10px;
-  background: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 8px;
-}
-.header .header__social .header__img {
-  width: 20px;
-  height: 20px;
-}
-
-.discoveries__brain-wrapper {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: minmax(350px, 800px);
-  justify-items: center;
-}
-.discoveries__brain-wrapper .discoveries__title {
-  font-size: 48px;
-  font-weight: bold;
-  text-align: center;
-}
-.discoveries__brain-wrapper .discoveries__subtitle {
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
-  padding-top: 20px;
-}
-.discoveries__brain-wrapper .discoveries__brain-container--first {
-  grid-template: 425px/minmax(300px, 600px);
-}
-.discoveries__brain-wrapper .discoveries__brain-container--second {
-  grid-template: 500px/minmax(300px, 450px);
-}
-.discoveries__brain-wrapper .discoveries__brain-container {
-  display: grid;
-  padding: 20px 0 20px 0;
-  justify-items: center;
-  justify-self: center;
-}
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: auto;
-}
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
-  background-image: url("../img/ratbrain1.webp");
-}
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
-  text-align: center;
-}
-.discoveries__brain-wrapper .discoveries__text {
-  display: grid;
-  font-size: 17px;
-}
-.discoveries__brain-wrapper .discoveries__text > p {
-  margin-bottom: 15px;
-  line-height: 25px;
-}
-.discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
-  background-image: url("../img/ratbrain2.png");
-}
-
-h1 {
-  margin: 0;
-  padding: 0;
-}
-
-/*Обнуление*/
 * {
   padding: 0;
   margin: 0;
@@ -193,6 +93,128 @@ h6 {
 }
 
 /*--------------------*/
+.header {
+  display: flex;
+  justify-content: center;
+}
+.header .header__container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.header .header__logo {
+  background-image: url("../img/header_logo.webp");
+  background-size: cover;
+  margin-bottom: 10px;
+  width: 140px;
+  height: 35px;
+}
+.header .header__social {
+  display: flex;
+  justify-content: center;
+}
+.header .header__social .header__social-item-container {
+  display: flex;
+  margin: 10px 10px 10px 10px;
+  background: white;
+  width: 20px;
+  height: 20px;
+  border-radius: 8px;
+}
+.header .header__social .header__img {
+  width: 20px;
+  height: 20px;
+}
+
+@media (min-width: 990px) {
+  .header .header__container {
+    padding: 30px 0 30px 0;
+    flex-direction: row;
+    flex: 0 1 1200px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header .header__container .header__logo {
+    width: 198px;
+    height: 58px;
+  }
+  .header .header__nav {
+    display: flex;
+    font-weight: bold;
+  }
+  .header .header__nav .header__nav-item {
+    padding: 0 20px 0 20px;
+  }
+  .header .header__social .header__social-item-container {
+    padding: 5px;
+  }
+}
+@media (max-width: 989px) {
+  .header__nav {
+    padding: 10px 0 10px 0;
+  }
+  .header__nav .header__nav-item {
+    padding: 5px 0 5px 0;
+  }
+}
+.discoveries__brain-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: minmax(350px, 800px);
+  justify-items: center;
+}
+.discoveries__brain-wrapper .discoveries__title {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+}
+.discoveries__brain-wrapper .discoveries__subtitle {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+.discoveries__brain-wrapper .discoveries__brain-container--first {
+  grid-template: 425px/minmax(300px, 600px);
+}
+.discoveries__brain-wrapper .discoveries__brain-container--second {
+  grid-template: 500px/minmax(300px, 450px);
+}
+.discoveries__brain-wrapper .discoveries__brain-container {
+  display: grid;
+  padding: 20px 0 20px 0;
+  justify-items: center;
+  justify-self: center;
+}
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
+}
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
+  background-image: url("../img/ratbrain1.webp");
+}
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
+  text-align: center;
+}
+.discoveries__brain-wrapper .discoveries__text {
+  display: grid;
+  font-size: 17px;
+}
+.discoveries__brain-wrapper .discoveries__text > p {
+  margin-bottom: 15px;
+  line-height: 25px;
+}
+.discoveries__brain-wrapper .discoveries__text .discoveries__brain-img--second {
+  background-image: url("../img/ratbrain2.png");
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
 .why-choose-us {
   text-align: center;
 }
@@ -255,8 +277,6 @@ h6 {
 }
 .footer__nav-item:last-child {
   margin-right: 0;
-}
-
-/*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
+} /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */
