@@ -256,7 +256,28 @@ h6 {
     grid-template-columns: 1fr;
   }
 }
+/* CSS for Banner Part */
 
+@media (max-width: 800px){
+  .banner__secondblock--heading, .banner__secondblock--secondparagraph {
+    text-align: left;
+  }
+}
+.banner__secondblock--heading{
+  color:#242D31 ;
+  font-size:52px;
+  font-family: Signika;
+}
+.banner__secondblock--secondparagraph{
+  color: #647A81;
+  font-size: 18px;
+  font-family: Poppins;
+}
+.banner__paragraph{
+  color: #519AC9;
+  font-size: 12px;
+  font-family: Poppins;
+}
 /*--------------------*/
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
