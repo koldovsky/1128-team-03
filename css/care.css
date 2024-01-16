@@ -6,6 +6,7 @@
     background-size: cover;
     padding: 100px;
     font-family: Arial, Helvetica, sans-serif;
+    filter: saturate(130%);
 }
 h1 {
     font-size: 12px;
