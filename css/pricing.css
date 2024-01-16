@@ -176,7 +176,7 @@ ul li {
 
 .pricing__select-plan {
     background-color: var(--bn-select-color);
-    border: 1px solid black;
+    border: 1px solid var(--bn-select-color);
     border-radius: 5px;
     font-size: 0.675rem;   
     font-family: "Poppins", sans-serif;
@@ -189,8 +189,18 @@ ul li {
     cursor: pointer;
     width: 140px;
     height: 42px;
+    box-shadow: -3px -3px #dfdfdf, 0.5em 0.4em #dfdfdf;
 }
 
 .pricing__select-bn-content {
     padding-right: 20px;
+}
+
+.pricing__select-plan:hover {
+    background-color: var(--select-hover-color);
+    border-color: var(--select-hover-color);
+}
+
+.pricing__arrow:hover {
+    background-color: var(--svg-bn-hover);
 }
