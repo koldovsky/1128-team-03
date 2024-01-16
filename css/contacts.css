@@ -1,0 +1,9 @@
+.contacts__container {
+    width: 300px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+}
+p {
+    color:brown;
+}
