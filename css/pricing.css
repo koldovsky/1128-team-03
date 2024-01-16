@@ -1,6 +1,13 @@
 .pricing {
     display: flex;
     margin: 0;
+    padding: 60px 0 50px 0;
+}
+
+.pricing__content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .pricing__info {
@@ -8,7 +15,7 @@
     height: 527px;
     margin: 0 15px;
     box-sizing: border-box;
-    padding: 60px 24px 50px;
+    padding: 0 24px 0;
     border: 1px solid black; /*later to do border none*/
 }
 .pricing__title {
@@ -70,6 +77,12 @@
     padding: 8px 0 0 15px;
 }
 
+.pricing__plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 .pricing__price {
     color: var(--price-color);
     font-size: 40px;
@@ -84,12 +97,6 @@
     margin-top: 25px;
 }
 
-/* grid for list
-.pricing__features {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}*/ 
 ul.pricing__features {
     list-style: none;
     padding-left: 0;
@@ -131,12 +138,6 @@ ul li {
     background-color: var(--crossmark-color);
 }
 
-.pricing__plan {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .arrow-svg {
     transform: rotateY(180deg);
 }
@@ -147,6 +148,11 @@ ul li {
     border-radius: 50%;
     fill: var(--svg-arrow-color);
     background-color: var(--svg-bg-color);
+    margin-top: 170px;
+}
+
+.pricing__details {
+    padding: 0 15px 0;
 }
 
 .pricing__details-card {
