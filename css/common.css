@@ -33,12 +33,13 @@
 }
 body {
     display: grid;
-    /* 
-        We cannot set the width of the body.
-        This only needs to be done for internal containers.
-    */
-    /* grid-template-columns: minmax(390px, 1200px); */
     justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 24px;
+    margin: auto;
 }
 
 img {
