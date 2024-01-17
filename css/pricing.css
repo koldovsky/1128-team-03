@@ -159,6 +159,8 @@ ul li {
 
 .arrow__svg-left {
     transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
 }
 
 .pricing__arrow-left {
@@ -181,6 +183,18 @@ top: calc(50% - 412px);
     margin-top: 170px;
     padding: 5px;
     position: absolute;
+}
+.pricing__arrow-left {
+    position:absolute;
+    left: 52px;
+    top: calc(50% - 487px);
+}
+    
+
+.pricing__arrow-right {
+    position:absolute;
+    left: 52px;
+    top: calc(50% - 487px);
 }
 
 .pricing__details {

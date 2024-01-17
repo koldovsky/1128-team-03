@@ -1,3 +1,8 @@
 .contacts__commonbox {
-  display:flex;
+}
+.contacts {
+  flex-direction: column;
+  margin: auto;
+  max-width: 1200px;
+  padding: 60px 0 50px 0;
 }

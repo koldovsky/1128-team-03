@@ -45,12 +45,13 @@
   padding-bottom: 20px;
 }
 .faq__default-answers {
-max-width: 19.4rem;
-padding-left: 24px;
+  max-width: 19.4rem;
+  padding-left: 24px;
 }
 .faq__animals-photo-list {
   max-width: 19.4rem;
   padding-left: 24px;
+  position: relative;
 }
 .faq__animals-photo-item {
   max-width: 17rem;
@@ -74,15 +75,32 @@ hr {
 }
 .faq__animals-photo-next, .faq__animals-photo-previous {
   background-color: rgba(0, 0, 0, 0);
-  color: black;
-  height: 20px;
+  color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: calc(50% - 10px);
+}
+.arrow-animal {
+  color:  rgba(0, 0, 0, 0);
+  fill: rgb(255, 255, 255);
+  margin-top: 20%;
   width: 20px;
+  height: 20px;
 }
 .faq__animals-photo-previous {
-transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+  transform: matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1);
+  left: 9%;
+}
+.faq__animals-photo-next {
+  right: 5%;
 }
 .faq__default-answers__item__inline{
-display: flex;
+  display: flex;
+}
+.arrow-button {
+  width: 32px;
+  height: 32px;
+  background-color: rgb(35, 85, 101);
+  border-radius: 100%;
 }
 @media (min-width: 768px){
   .faq__all-block {

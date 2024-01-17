@@ -1,8 +1,9 @@
 .discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
-  grid-template-columns: minmax(350px, 800px);
+  max-width: 800px;
   justify-items: center;
+  margin: auto;
 
   .discoveries__title {
     font-size: 48px;
