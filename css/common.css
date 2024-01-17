@@ -22,12 +22,22 @@
     --svg-arrow-color: #fff;
     --svg-bn-hover: #235565;
     --details-card-bg-color: #f8fafb;
+    --footer-bg: #f8fafb;
+    --footer-links: rgba(35, 85, 101, 0.46);
+    --footer-links-active: #235565;
+    --footer-text: rgb(100, 122, 129);
+    --footer-icon: #519ac9;
+    --footer-icon-active: #3781b0;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
 body {
     display: grid;
-    grid-template-columns: minmax(390px, 1200px);
+    /* 
+        We cannot set the width of the body.
+        This only needs to be done for internal containers.
+    */
+    /* grid-template-columns: minmax(390px, 1200px); */
     justify-content: center;
 }
 
