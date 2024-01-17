@@ -1,5 +1,4 @@
 .contacts__commonbox {
-  display:flex;
 }
 .contacts {
   flex-direction: column;
