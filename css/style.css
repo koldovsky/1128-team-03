@@ -5,7 +5,6 @@
 @import "faq.css";
 @import "contacts.css";
 @import "care.css";
-@import "./footer.css";
 * {
   padding: 0;
   margin: 0;
@@ -271,39 +270,123 @@ h1 {
     grid-template-columns: 1fr;
   }
 }
-/* Banner CSS */
-@media (max-width: 768px) {
-  .banner {
-    text-align: left;
-  }
-  .banner__paragraph,
-  .banner__secondblock--heading,
-  .banner__secondblock--secondparagraph {
-    font-size: 16px; 
-  }
-
-  .button__banner--pagedown,
-  .button__banner--tel {
-    width: 100%; 
-    margin-bottom: 10px; 
+.footer__wrap-img {
+  height: 100px;
+}
+.footer__wrap-img img {
+  object-fit: cover;
+  height: 100%;
+}
+.footer__wrap {
+  background-color: var(--footer-bg);
+  padding-bottom: 20px;
+}
+.footer__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 15px;
+}
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .footer__row {
+    flex-direction: column;
   }
 }
-.banner__secondblock--heading{
-  color: #242d31;
-  font-size:50px;
-  font-family: Signika;
+.footer__logo {
+  width: 189px;
+  height: 55px;
 }
-.banner__secondblock--secondparagraph{
-  color: #647A81;
-  font-size:18px;
-  font-family: Poppins;
+@media (max-width: 600px) {
+  .footer__logo {
+    margin: auto;
+  }
 }
-.banner__paragraph{
-  color: #519AC9;
+.footer__nav {
+  display: flex;
+  margin-top: 30px;
+}
+.footer__nav-item {
+  display: inline-block;
+  margin-right: 10px;
+  color: var(--footer-links);
+  transition: color 0.3s;
+}
+.footer__nav-item:last-child {
+  margin-right: 0;
+}
+.footer__nav-item:hover {
+  color: var(--footer-links-active);
+}
+@media (max-width: 600px) {
+  .footer__nav-item {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .footer__nav {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.footer__follow h3 {
+  color: var(--footer-text);
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.footer__follow nav a {
+  display: inline-block;
+  margin: 0 5px;
+}
+.footer__follow nav a svg {
+  fill: var(--footer-icon);
+  transition: fill 0.3s;
+}
+.footer__follow nav a:hover svg {
+  fill: var(--footer-icon-active);
+}
+@media (max-width: 600px) {
+  .footer__follow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .footer__follow h3 {
+    margin-bottom: 0;
+    margin-right: 10px;
+  }
+}
+.footer .copy {
+  margin-top: 50px;
+}
+@media (max-width: 600px) {
+  .footer .copy {
+    text-align: center;
+  }
+}
+.footer__copyright {
+  color: var(--footer-links);
   font-size: 12px;
-  font-family: Poppins;
 }
-/*--------------------*/
+@media (max-width: 600px) {
+  .footer__copyright {
+    margin-bottom: 20px;
+  }
+}
+.footer__welcome {
+  color: var(--footer-links);
+  font-size: 12px;
+}
+.footer__welcome span {
+  color: var(--footer-icon);
+  font-weight: 600;
+}
+
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */
