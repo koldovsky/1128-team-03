@@ -1,18 +1,22 @@
 .pricing {
     display: flex;
-    margin: 0;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
     padding: 60px 0 50px 0;
 }
 
 .pricing__content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    padding: 0 24px 0 24px;
 }
 
+@media { min-width: 767px;}
+@media {min-width: 991px;}
+
 .pricing__info {
-    width: 400px;
-    height: 527px;
     margin: 0 15px;
     box-sizing: border-box;
     padding: 0 24px 0;
@@ -28,7 +32,7 @@
 
 .pricing__subtitle {
     color: var(--subtitle-color);
-    font-size: 40px;
+    font-size: 2.125rem;
     line-height: normal;
     font-family: "Signika", sans-serif;
     font-weight: bold;
@@ -41,13 +45,19 @@
     font-family: "Poppins", sans-serif;
     margin-top: 25px;
     line-height: normal;
+    text-align: left;
 }
 
 .pricing__schedule {
     display: flex;
-    justify-content:left;
+    flex-direction: column;
+    justify-content:space-evenly;
     align-items: end;
     margin-top: 20px;
+}
+
+.pricing__schedule-items {
+    margin-bottom: 16px;
 }
 
 .pricing__day {
@@ -55,15 +65,17 @@
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
+/*padding on big screen
 .pricing__day p:nth-child(-n+2) {
     padding: 8px 15px 8px 0;
 }
 
 .pricing__day p:last-child {
     padding: 8px 15px 0 0;
-}
+}*/
 
 .pricing__time {
     color: var(--time-color);
@@ -71,22 +83,26 @@
     font-size: 1rem;
 }
 
+/* on big screens
 .pricing__time p:nth-child(-n+2) {
     padding: 8px 0 8px 15px;
 }
 .pricing__time p:last-child {
     padding: 8px 0 0 15px;
-}
+}*/
 
 .pricing__plan {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    padding: 0 24px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .pricing__price {
     color: var(--price-color);
-    font-size: 40px;
+    font-size: 2.125rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
@@ -94,15 +110,14 @@
 .pricing__plan-title {
     color: var(--plan-title-color);
     font-family: "Signika", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.375rem;
     margin-top: 25px;
 }
 
 ul.pricing__features {
     list-style: none;
     padding-left: 0;
-    height: 176px;
-    width: 290px;
+    margin-top: 20px;
 }
 
 ul.pricing__features li {
@@ -159,18 +174,17 @@ ul li {
 }
 
 .pricing__details-card {
-    height:447px;
-    width: 400px;
     background-color: var(--details-card-bg-color);
     border: 1px solid black; /*later border none*/
-    padding: 40px;
-    margin: 0 15px;
+    padding: 31px;
     box-sizing: border-box;
+    line-height: normal;
 }
 
 .pricing__select-button {
     margin-top: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: left;
 }
 
@@ -195,7 +209,7 @@ ul li {
 .pricing__select-bn-content {
     padding-right: 20px;
 }
-
+/* big screen
 .pricing__select-plan:hover {
     background-color: var(--select-hover-color);
     border-color: var(--select-hover-color);
@@ -204,3 +218,4 @@ ul li {
 .pricing__arrow:hover {
     background-color: var(--svg-bn-hover);
 }
+*/
