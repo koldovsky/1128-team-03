@@ -1,6 +1,6 @@
 .care {
-    
-    background-image: url("IMG_1136.JPG");
+    text-align: center;
+    background-image: url("../IMG_1136.JPG");
     margin-top: 100px;
     line-height: 1.5;
     background-size: cover;
@@ -17,6 +17,6 @@
     letter-spacing: 3px;
 }
 .sub-title, .emergency-text {
-   color: rgb(0, 0, 0); 
+   color: rgb(255, 255, 255); 
 
 }
