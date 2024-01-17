@@ -1,9 +1,3 @@
-.contacts {
-    display: flex;
-    text-align: center;
-    max-width: 1200px;
-  margin: auto;
-}
-.contacts__form-box {
-    position: relative;
+.contacts__commonbox {
+  display:flex;
 }
