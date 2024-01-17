@@ -1,27 +1,35 @@
 .pricing {
     display: flex;
-    margin: 0;
+    flex-direction: column;
+    margin: auto;
+    max-width: 1200px;
+    padding: 60px 0 50px 0;
+}
+
+.pricing__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 24px 0 24px;
 }
 
 .pricing__info {
-    width: 400px;
-    height: 527px;
     margin: 0 15px;
     box-sizing: border-box;
-    padding: 60px 24px 50px;
+    padding: 0 24px 0;
     border: 1px solid black; /*later to do border none*/
 }
 .pricing__title {
     color: var(--title-color);
     font-family: "Poppins", sans-serif;
-    font-size: 0,75 rem;
+    font-size: 0.75rem;
     font-weight: bold;
   
 }
 
 .pricing__subtitle {
     color: var(--subtitle-color);
-    font-size: 40px;
+    font-size: 2.125rem;
     line-height: normal;
     font-family: "Signika", sans-serif;
     font-weight: bold;
@@ -34,45 +42,64 @@
     font-family: "Poppins", sans-serif;
     margin-top: 25px;
     line-height: normal;
+    text-align: left;
 }
 
 .pricing__schedule {
     display: flex;
-    justify-content:left;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: end;
     margin-top: 20px;
+}
+
+.pricing__schedule-items {
+    margin-bottom: 16px;
 }
 
 .pricing__day {
     color: var(--subtext-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1 rem;
+    font-size: 1rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
+/*padding on big screen
 .pricing__day p:nth-child(-n+2) {
     padding: 8px 15px 8px 0;
 }
 
 .pricing__day p:last-child {
     padding: 8px 15px 0 0;
-}
+}*/
 
 .pricing__time {
     color: var(--time-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1 rem;
+    font-size: 1rem;
 }
 
+/* on big screens
 .pricing__time p:nth-child(-n+2) {
     padding: 8px 0 8px 15px;
 }
 .pricing__time p:last-child {
     padding: 8px 0 0 15px;
+}*/
+
+.pricing__plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 24px;
+    margin-top: 30px;
+    margin-bottom: 35px;
 }
 
 .pricing__price {
     color: var(--price-color);
-    font-size: 40px;
+    font-size: 2.125rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
@@ -80,24 +107,19 @@
 .pricing__plan-title {
     color: var(--plan-title-color);
     font-family: "Signika", sans-serif;
-    font-size: 1,5rem;
+    font-size: 1.375rem;
     margin-top: 25px;
 }
 
-/* grid for list
-.pricing__features {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    align-items: center;
-}*/ 
 ul.pricing__features {
     list-style: none;
     padding-left: 0;
+    margin-top: 20px;
 }
 
 ul.pricing__features li {
     padding-left: 24px;
-    margin-bottom: 8px;
+    margin-bottom: 16px;
     position: relative;
 }
 
@@ -131,12 +153,6 @@ ul li {
     background-color: var(--crossmark-color);
 }
 
-.pricing__plan {
-    display: grid;
-    gap: 5px;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
 .arrow-svg {
     transform: rotateY(180deg);
 }
@@ -147,29 +163,33 @@ ul li {
     border-radius: 50%;
     fill: var(--svg-arrow-color);
     background-color: var(--svg-bg-color);
+    margin-top: 170px;
+}
+
+.pricing__details {
+    padding: 0 15px 0;
 }
 
 .pricing__details-card {
-    height:447px;
-    width: 400px;
     background-color: var(--details-card-bg-color);
     border: 1px solid black; /*later border none*/
-    padding: 40px;
-    margin: 0 15px;
+    padding: 31px;
     box-sizing: border-box;
+    line-height: normal;
 }
 
 .pricing__select-button {
     margin-top: 20px;
     display: flex;
+    flex-direction: row;
     justify-content: left;
 }
 
 .pricing__select-plan {
     background-color: var(--bn-select-color);
-    border: 1px solid black;
+    border: 1px solid var(--bn-select-color);
     border-radius: 5px;
-    font-size: 0,675rem;   
+    font-size: 0.675rem;   
     font-family: "Poppins", sans-serif;
     color: var(--button-text-color);
     text-decoration: none;
@@ -178,8 +198,21 @@ ul li {
     padding: 16px 24px;
     margin: 10px;
     cursor: pointer;
+    width: 140px;
+    height: 42px;
+    box-shadow: -3px -3px #dfdfdf, 0.5em 0.4em #dfdfdf;
 }
 
 .pricing__select-bn-content {
-    padding-right: 32px;
+    padding-right: 20px;
 }
+/* big screen
+.pricing__select-plan:hover {
+    background-color: var(--select-hover-color);
+    border-color: var(--select-hover-color);
+}
+
+.pricing__arrow:hover {
+    background-color: var(--svg-bn-hover);
+}
+*/
