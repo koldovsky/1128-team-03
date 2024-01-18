@@ -1,8 +1,24 @@
-.contacts__commonbox {
+.contacts__form-box {
+  align-items: baseline;
+  background-color: rgb(255, 255, 255);
 }
-.contacts {
+.contacts__form {
+  display: flex;
   flex-direction: column;
-  margin: auto;
+}
+.contacts__form-box input,
+.contacts__form-box textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+.contacts__form-box {
   max-width: 1200px;
-  padding: 60px 0 50px 0;
+  margin: auto;
+}
+.contacts__form-box-raq {
+  background-color: rgb(35, 85, 101);
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
 }
