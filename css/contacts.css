@@ -1,6 +1,7 @@
 .contacts__form-box {
   align-items: baseline;
   background-color: rgb(255, 255, 255);
+  margin:auto;
 }
 .contacts__form {
   display: flex;
@@ -16,12 +17,33 @@
   margin: auto;
 }
 .contacts__form-box-raq {
-  background-color: rgb(35, 85, 101);
+  background-color: rgb(81, 154, 201);
   color: white;
   padding: 10px;
   border: none;
   cursor: pointer;
+  font-size: 12px;
 }
 p {
   font-family:  Poppins, sans-serif;
+}
+.contacts__information {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.contacts__title {
+  color: #519ac9;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.contacts__mainquastion {
+  font-weight: bold;
+  color: rgb(36, 45, 49);
+  heigh: auto;
+  font-size: 35px;
+}
+
+.contacts__container {
+  margin-top: 20px;
 }
