@@ -2,6 +2,8 @@
   align-items: baseline;
   background-color: rgb(255, 255, 255);
   margin:auto;
+  max-width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .contacts__form {
   display: flex;
@@ -11,10 +13,13 @@
 .contacts__form-box textarea {
   margin-bottom: 10px;
   padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
 .contacts__form-box {
   max-width: 1200px;
   margin: auto;
+
 }
 .contacts__form-box-raq {
   background-color: rgb(81, 154, 201);
