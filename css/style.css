@@ -99,70 +99,6 @@ h6 {
 }
 
 /*--------------------*/
-.header {
-  display: flex;
-  justify-content: center;
-}
-.header .header__container {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.header .header__logo {
-  background-image: url("../img/header_logo.webp");
-  background-size: cover;
-  margin-bottom: 10px;
-  width: 140px;
-  height: 35px;
-}
-.header .header__social {
-  display: flex;
-  justify-content: center;
-}
-.header .header__social .header__social-item-container {
-  display: flex;
-  margin: 10px 10px 10px 10px;
-  background: white;
-  width: 20px;
-  height: 20px;
-  border-radius: 8px;
-}
-.header .header__social .header__img {
-  width: 20px;
-  height: 20px;
-}
-
-@media (min-width: 990px) {
-  .header .header__container {
-    padding: 30px 0 30px 0;
-    flex-direction: row;
-    flex: 0 1 1200px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .header .header__container .header__logo {
-    width: 198px;
-    height: 58px;
-  }
-  .header .header__nav {
-    display: flex;
-    font-weight: bold;
-  }
-  .header .header__nav .header__nav-item {
-    padding: 0 20px 0 20px;
-  }
-  .header .header__social .header__social-item-container {
-    padding: 5px;
-  }
-}
-@media (max-width: 989px) {
-  .header__nav {
-    padding: 10px 0 10px 0;
-  }
-  .header__nav .header__nav-item {
-    padding: 5px 0 5px 0;
-  }
-}
 .discoveries__brain-wrapper {
   display: grid;
   justify-content: center;
@@ -197,7 +133,7 @@ h6 {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 .discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
   background-image: url("../img/ratbrain1.webp");

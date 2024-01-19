@@ -37,7 +37,7 @@ body {
     justify-content: center;
 }
 
-.container {
+.container-custom {
     max-width: 1200px;
     padding: 0 24px;
     margin: auto;
