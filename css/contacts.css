@@ -52,3 +52,7 @@ p {
 .contacts__container {
   margin-top: 20px;
 }
+.contacts__commonbox {
+  align-items: center;
+justify-content: center;
+}
