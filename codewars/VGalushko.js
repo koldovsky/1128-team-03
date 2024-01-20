@@ -1,3 +1,4 @@
+//https://www.codewars.com/users/2024JS
 //Grasshopper - Messi goals function
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
     return(laLigaGoals + copaDelReyGoals + championsLeagueGoals)
