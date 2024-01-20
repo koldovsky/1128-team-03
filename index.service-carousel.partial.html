@@ -1,42 +1,51 @@
 
-  
-    <div class="carousel__service">
-      <button class="carousel__indicator carousel__indicator--active" type="button" data-slide-to="0"></button>
-      <button class="carousel__indicator" type="button" data-slide-to="1"></button>
-      <button class="carousel__indicator" type="button" data-slide-to="2"></button>
-      <button class="carousel__indicator" type="button" data-slide-to="3"></button>
-      <button class="carousel__indicator" type="button" data-slide-to="4"></button>
-      <button class="carousel__indicator" type="button" data-slide-to="5"></button>
-    </div>
-    <div id="carousel service" class="carousel slide" data-bs-ride="carousel container">
-      <div class="carousel-service">
-        <div class="carousel-item active">
-          <img src="img/pet grooming.jpg" class="d-block w-100" alt="Pet Grooming">
-        </div>
-        <div class="carousel-service">
-          <img src="img/pet vaccination.jpg" class="d-block w-100" alt="Pet Vaccination">
-        </div>
-        <div class="carousel-service">
-          <img src="img/surgeries dental care.jpg" class="d-block w-100" alt="Surgeries and Dental Care">
-        </div>
-        <div class="carousel-service">
-          <img src="img/pet adoptation.jpg" class="d-block w-100" alt="Pet Adoptation">
-        </div>
-        <div class="carousel-service">
-          <img src="img/pet sitting.jpg" class="d-block w-100" alt=".Pet Sitting.">
-        </div>
-        <div class="carousel-service">
-          <img src="img/microchipping.jpg" class="d-block w-100" alt="Microchipping">
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
-    </div>
-    </div>
+<div class="carousel">
+  <div class="carousel__track-container">
+    <ul class="carousel__track">
+      <li class="carousel__slide pet grooming">
+        <img src="img/pet grooming.jpg" alt="pet grooming" class="carousel__image">
+        <h3>Pet Grooming</h3>
+        <p>Our groomers will make your pet the most beautiful. Grooming in our clinic is absolutely safe and comfortable
+          for your pet.</p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+      <li class="carousel__slide pet vaccination">
+        <img src="img/pet vaccination.jpg" alt="pet vaccination" class="carousel__image">
+        <h3>Pet Vaccination</h3>
+        <p>Our veterinary clinic offers vaccinations for your pets. We use only certified vaccines and check the
+          allergic reaction. </p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+      <li class="carousel__slide surgeries&dental care">
+        <img src="img/surgeries dental care.jpg" alt="surgeries dental care" class="carousel__image">
+        <h3>Surgeries & Dental Care</h3>
+        <p>Our surgeons and dentists will perform all the necessary procedures and interventions to restore the health
+          of your pet.</p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+      <li class="carousel__slide pet adoptation">
+        <img src="img/pet adoptation.jpg" alt="pet adoptation" class="carousel__image">
+        <h3>Pet Adoption</h3>
+        <p>If you want to adopt a pet, our veterinary clinic will help you determine its condition. We also can help
+          with choosing a pet.</p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+      <li class="carousel__slide pet sitting">
+        <img src="img/pet sitting.jpg" alt="pet sitting" class="carousel__image">
+        <h3>Pet Sitting</h3>
+        <p>If you want to adopt a pet, our veterinary clinic will help you determine its condition. We also can help
+          with choosing a pet. </p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+      <li class="carousel__slide microchipping">
+        <img src="img/microchipping.jpg" alt="microchipping" class="carousel__image">
+        <h3>Microchipping</h3>
+        <p>The chip contains a unique code with important information. If your pet is lost, it will be easy to return it
+          to you.</p>
+        <span style="font-weight:bold">Read More ➞</span>
+      </li>
+    </ul>
   </div>
+  
+    <button class="carousel__button carousel__button--left" type="button">←</button>
+    <button class="carousel__button carousel__button--right" type="button">→</button>
