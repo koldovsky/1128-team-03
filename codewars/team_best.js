@@ -1,4 +1,4 @@
-/*
+
 // https://www.codewars.com/kata/grasshopper-messi-goals-function/train/javascript
 //1 Messi Goals
 function goals (laLigaGoals, copaDelReyGoals, championsLeagueGoals) {
@@ -44,4 +44,4 @@ function lovefunc(flower1, flower2){
     return (
         (flower1 + flower2) % 2 === 0 ? false : true)
 }
-*/
+
