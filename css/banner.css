@@ -70,6 +70,8 @@
 .button__banner--tel:hover {
   background: #235565 ;
   color:white;
+  text-decoration: none;
+
 }
 .button__banner--pagedown:hover {
   background: lightblue;
