@@ -1,6 +1,7 @@
 .pricing {
     margin-top: 60px;
     margin-bottom: 50px;
+    position: relative;
 }
 
 .pricing__content {
@@ -9,14 +10,13 @@
 }
 
 .pricing__info {
-    box-sizing: border-box;
-    border: 1px solid black; /*later to do border none*/
+    padding-left: 15px;
 }
 
 h2.pricing__title {
     color: var(--title-color);
     font-family: "Poppins", sans-serif;
-    font-size: 0.75rem;
+    font-size: 0.8rem;
     font-weight: 600;
     line-height: normal;
     letter-spacing: 1px;
@@ -24,7 +24,7 @@ h2.pricing__title {
 
 h3.pricing__subtitle {
     color: var(--subtitle-color);
-    font-size: 2.125rem;
+    font-size: 2.27rem;
     line-height: normal;
     font-family: "Signika", sans-serif;
     font-weight: bold;
@@ -33,7 +33,7 @@ h3.pricing__subtitle {
 
 p.pricing__description {
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-family: "Poppins", sans-serif;
     margin-top: 25px;
     line-height: normal;
@@ -51,7 +51,7 @@ p.pricing__description {
 .pricing__day {
     color: var(--subtext-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: bold;
     margin-bottom: 5px;
     line-height: 30px;
@@ -60,7 +60,7 @@ p.pricing__description {
 .pricing__time {
     color: var(--time-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 @media (min-width: 768px) {
@@ -78,13 +78,13 @@ p.pricing__description {
     margin-top: 30px;
     margin-bottom: 35px;
     padding-right: 15px;
-    padding-right: 15px;
+    padding-left: 15px;
 }
 
 
 .pricing__price {
     color: var(--price-color);
-    font-size: 2.125rem;
+    font-size: 2.27rem;
     font-family: "Poppins", sans-serif;
     font-weight: bold;
 }
@@ -92,8 +92,9 @@ p.pricing__description {
 .pricing__plan-title {
     color: var(--plan-title-color);
     font-family: "Signika", sans-serif;
-    font-size: 1.375rem;
+    font-size: 1.6rem;
     margin-top: 25px;
+    font-weight: 500;
 }
 
 @media (min-width: 767px) {
@@ -139,7 +140,7 @@ ul.pricing__features li::before {
 ul li {
     color: var(--price-features-color);
     font-family: "Poppins", sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 20px;
     margin-top: 20px;
 }
@@ -157,12 +158,13 @@ ul li {
 }
 
 .pricing__details-card {
-    background-color: lightyellow /*var(--details-card-bg-color)*/;
+    background-color: var(--details-card-bg-color);
     padding: 31px;
     line-height: 1.5;
     font-weight: normal;
 }
 
+/*
 @media (min-width: 767px;) {
     .pricing__plan {
         flex-direction: row;
@@ -170,5 +172,76 @@ ul li {
     .pricing__content {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
     }
+}*/
+
+.arrow__svg-left {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+}
+
+.arrow__svg-right {
+    width: 100%;
+    height: 100%;
+}
+
+.pricing__arrow-left, .pricing__arrow-right {
+    height: 24px;
+    width: 24px;
+    padding: 4px;
+    border-radius: 50%;
+    fill: var(--svg-arrow-color);
+    background-color: var(--svg-bg-arrow-mobile-color);
+    margin-top: 170px;
+    position:absolute;
+}
+
+.pricing__arrow-left {
+    left: 20px;
+    top: calc(50% - 378px);
+}
+
+.pricing__arrow-right {
+    right: 20px;
+    top: calc(50% - 378px);
+}
+
+.pricing__select-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.pricing__select-plan {
+    background-color: var(--bn-select-color);
+    border: 1px solid var(--bn-select-color);
+    border-radius: 5px;
+    font-size: 0.72rem;   
+    font-family: "Poppins", sans-serif;
+    color: var(--button-text-color);
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 16px 24px;
+    margin: 10px;
+    cursor: pointer;
+    width: 9.35rem;
+    height: 2.8rem;
+    box-shadow: -3px -3px #dfdfdf, 0.5em 0.4em #dfdfdf;
+}
+
+.pricing__select-bn-content {
+    padding-right: 20px;
+}
+/* big screen*/
+a.pricing__select-plan:hover {
+    background-color: var(--select-hover-color);
+    border-color: var(--select-hover-color);
+}
+
+.pricing__arrow:hover {
+    background-color: var(--svg-bn-hover);
 }
