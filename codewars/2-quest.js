@@ -19,5 +19,5 @@ var max = function(list){
 
 //4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 function min(arr, toReturn) {
-    return (toReturn === "value" ? arr.sort( (a, b) => a-b )[0] : arr.indexOf(Math.min(...arr)))
+    return (toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr)))
 }
