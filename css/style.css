@@ -2,6 +2,7 @@
 /*Обнуление*/
 @import "common.css";
 @import "service-carousel.css";
+@import "why-us.css";
 @import "pricing.css";
 @import "faq.css";
 @import "partners-carousel.css";
@@ -119,10 +120,10 @@ h6 {
   padding-top: 20px;
 }
 .discoveries__brain-wrapper .discoveries__brain-container--first {
-  grid-template: 425px/minmax(300px, 600px);
+  grid-template: 425px / minmax(300px, 600px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container--second {
-  grid-template: 500px/minmax(300px, 450px);
+  grid-template: 500px / minmax(300px, 450px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container {
   display: grid;
@@ -130,16 +131,22 @@ h6 {
   justify-items: center;
   justify-self: center;
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-img--first {
   background-image: url("../img/ratbrain1.webp");
 }
-.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
+.discoveries__brain-wrapper
+  .discoveries__brain-container
+  .discoveries__brain-text {
   text-align: center;
 }
 .discoveries__brain-wrapper .discoveries__text {
@@ -157,60 +164,6 @@ h6 {
 h1 {
   margin: 0;
   padding: 0;
-}
-
-.why-choose-us {
-  text-align: center;
-}
-
-.why-choose-us h2 {
-  width: auto;
-  height: auto;
-  font-weight: bold;
-}
-
-.why-choose-us__items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-content: center;
-}
-
-.why-choose-us__item {
-  text-align: left;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.why-choose-us__item img {
-  color: rgb(36, 45, 49);
-  width: 100px;
-  height: auto;
-}
-
-.why-choose-us__item h3 {
-  margin-top: 10px;
-}
-
-.why-choose-us__item p {
-  color: gray;
-  max-width: 100%;
-  word-wrap: break-word;
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .why-choose-us__items {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 480px) {
-  .why-choose-us__items {
-    grid-template-columns: 1fr;
-  }
 }
 .footer__wrap-img {
   height: 100px;
