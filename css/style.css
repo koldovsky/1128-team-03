@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import "common.css";
+@import "../css/why-us.css";
 @import "service-carousel.css";
-@import "why-us.css";
 @import "pricing.css";
 @import "faq.css";
 @import "partners-carousel.css";
@@ -120,10 +120,10 @@ h6 {
   padding-top: 20px;
 }
 .discoveries__brain-wrapper .discoveries__brain-container--first {
-  grid-template: 425px / minmax(300px, 600px);
+  grid-template: 425px/minmax(300px, 600px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container--second {
-  grid-template: 500px / minmax(300px, 450px);
+  grid-template: 500px/minmax(300px, 450px);
 }
 .discoveries__brain-wrapper .discoveries__brain-container {
   display: grid;
@@ -131,22 +131,16 @@ h6 {
   justify-items: center;
   justify-self: center;
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-img {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-img--first {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-img--first {
   background-image: url("../img/ratbrain1.webp");
 }
-.discoveries__brain-wrapper
-  .discoveries__brain-container
-  .discoveries__brain-text {
+.discoveries__brain-wrapper .discoveries__brain-container .discoveries__brain-text {
   text-align: center;
 }
 .discoveries__brain-wrapper .discoveries__text {
@@ -165,6 +159,7 @@ h1 {
   margin: 0;
   padding: 0;
 }
+
 .footer__wrap-img {
   height: 100px;
 }
