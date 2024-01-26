@@ -50,3 +50,8 @@ function giveMeFive(obj){
     }
     return arr;
 }
+
+//Koniev Alex
+function giveMeFive(obj){
+  return Object.entries(obj).join(',').split(',').filter((el) => el.length == 5);
+}
