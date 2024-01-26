@@ -21,7 +21,7 @@ const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
 
 //Koniev Alex
-var min = function(list){
+const min = function(list){
   
   let minNumber = list[0];
   
@@ -36,7 +36,7 @@ var min = function(list){
   return minNumber;
 }
 
-var max = function(list){
+const max = function(list){
   let maxNumber = list[0];
   
   list.map((number, i) => {
