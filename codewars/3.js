@@ -55,3 +55,21 @@ function giveMeFive(obj){
 function giveMeFive(obj){
   return Object.entries(obj).join(',').split(',').filter((el) => el.length == 5);
 }
+
+//https://www.codewars.com/kata/understanding-closures-the-basics/train/javascript
+
+//Koniev Alex
+function buildFun(n){
+
+	const res = [];
+
+  for (let i = 0; i < n; i++) {
+    (function (index) {
+      res.push(function () {
+        return index;
+      });
+    })(i);
+  }
+
+  return res;
+}
