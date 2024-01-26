@@ -5,6 +5,23 @@ class SmallestIntegerFinder {
     }
 }
 
+//Koniev Alex
+class SmallestIntegerFinder {
+  findSmallestInt(args) {
+    let minNumber = args[0];
+  
+    args.map((number, i) => {
+      if (number[0]) return;
+
+      if(number < minNumber) {
+        minNumber = number;
+      }
+    });
+    
+  return minNumber;
+  }
+}
+
 //2. Geometry Basics: Circle Circumference in 2D https://www.codewars.com/kata/geometry-basics-circle-circumference-in-2d/train/javascript
 function circleCircumference(circle) {
     return(circle.radius*2*3.1415926535)
