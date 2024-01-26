@@ -97,3 +97,15 @@ function warnTheSheep(queue) {
 function maps(numbers){
   return numbers.map((number) => number*2);
 }
+
+//7 https://www.codewars.com/kata/find-the-first-non-consecutive-number/train/javascript
+
+//Koniev Alex
+function firstNonConsecutive (arr) {
+    for (let i = 1; i < arr.length; i++) {
+        if (arr[i] !== arr[i - 1] + 1) {
+            return arr[i];
+        }
+    }
+    return null;
+}
