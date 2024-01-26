@@ -27,6 +27,19 @@ function circleCircumference(circle) {
     return(circle.radius*2*3.1415926535)
 }
 
+//Koniev Alex
+function circleCircumference(circle) {
+if (!(circle instanceof Circle)
+    || !(circle.center instanceof Point)
+    || typeof circle.radius !== 'number') {
+    throw new Error('Тут какая-то ошибка');
+  }
+
+  const circumference = 2 * Math.PI * circle.radius;
+
+  return Math.round(circumference * 1e6) / 1e6;
+}
+
 //3. Training JS #12: loop statement --for..in and for..of https://www.codewars.com/kata/training-js-number-12-loop-statement-for-dot-in-and-for-dot-of/train/javascript
 
 function giveMeFive(obj){
