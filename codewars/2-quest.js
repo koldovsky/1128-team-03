@@ -9,6 +9,13 @@ function stringToArray(string){
 //2 https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 const DNAtoRNA = (dna) => dna.replace(/T/g, 'U');
 
+//Koniev Alex
+function DNAtoRNA(dna) {
+  const dnaArr = dna.split('');
+ 
+  return dnaArr.map((el) => el === 'T' ? 'U' : el).join("");
+}
+
 //3 https://www.codewars.com/kata/577a98a6ae28071780000989/train/javascript
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
