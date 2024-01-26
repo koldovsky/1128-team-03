@@ -1,6 +1,11 @@
 //1 https://www.codewars.com/kata/convert-a-string-to-an-array/train/javascript
 const stringToArray = (string) => string.split(' ');
 
+//Koniev Alex
+function stringToArray(string){
+  return string.split(" ");
+}
+
 //2 https://www.codewars.com/kata/dna-to-rna-conversion/train/javascript
 const DNAtoRNA = (dna) => dna.replace(/T/g, 'U');
 
