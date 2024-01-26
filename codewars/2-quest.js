@@ -52,3 +52,27 @@ const max = function(list){
 
 //4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 const min = (arr, toReturn) => (toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr)));
+
+//Koniev Alex
+const minNumber = function(list){
+  
+  let minNumber = list[0];
+  
+  list.map((number, i) => {
+    if (number[0]) return;
+    
+    if(number < minNumber) {
+      minNumber = number;
+    }
+  });
+    
+  return minNumber;
+}
+
+function min(arr, toReturn) {
+  if (toReturn === 'value') {
+    return minNumber(arr);
+  }else{
+    return arr.indexOf(minNumber(arr));
+  }
+}
