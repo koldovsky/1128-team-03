@@ -20,5 +20,35 @@ function DNAtoRNA(dna) {
 const min = (list) => Math.min(...list);
 const max = (list) => Math.max(...list);
 
+//Koniev Alex
+var min = function(list){
+  
+  let minNumber = list[0];
+  
+  list.map((number, i) => {
+    if (number[0]) return;
+    
+    if(number < minNumber) {
+      minNumber = number;
+    }
+  });
+    
+  return minNumber;
+}
+
+var max = function(list){
+  let maxNumber = list[0];
+  
+  list.map((number, i) => {
+    if (number[0]) return;
+    
+    if(number > maxNumber) {
+      maxNumber = number;
+    }
+  });
+    
+  return maxNumber;
+}
+
 //4 https://www.codewars.com/kata/544a54fd18b8e06d240005c0/train/javascript
 const min = (arr, toReturn) => (toReturn === "value" ? Math.min(...arr) : arr.indexOf(Math.min(...arr)));
