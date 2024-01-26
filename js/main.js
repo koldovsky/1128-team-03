@@ -1,11 +1,12 @@
-// button UP
 const btn = document.querySelector('.btn-scroll-up');
 
 const handleScroll = () => {
-    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-        setShowButton(true);
+    const scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (scrollPosition > 100) {
+        btn.classList.add('show');
     } else {
-        setShowButton(false);
+        btn.classList.remove('show');
     }
 };
 
@@ -16,7 +17,6 @@ const handlerScrollUp = () => {
         behavior: 'smooth',
     });
 };
-
 
 window.addEventListener('scroll', handleScroll);
 
