@@ -90,3 +90,10 @@ function warnTheSheep(queue) {
         return `Oi! Sheep number ${sheepNumber}! You are about to be eaten by a wolf!`;
     }
 }
+
+//6 https://www.codewars.com/kata/57f781872e3d8ca2a000007e/train/javascript
+
+//Koniev Alex
+function maps(numbers){
+  return numbers.map((number) => number*2);
+}
