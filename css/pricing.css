@@ -74,13 +74,19 @@ p.pricing__description {
 .pricing__plan {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     margin-top: 30px;
     margin-bottom: 35px;
     padding-right: 15px;
     padding-left: 15px;
 }
 
+.pricing__details {
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
 
 .pricing__price {
     color: var(--price-color);
@@ -225,17 +231,24 @@ ul li {
     text-decoration: none;
     text-align: center;
     font-weight: bold;
-    padding: 16px 24px;
+    padding: 10px 15px;
     margin: 10px;
     cursor: pointer;
     width: 9.35rem;
     height: 2.8rem;
     box-shadow: -3px -3px #dfdfdf, 0.5em 0.4em #dfdfdf;
+    display: inline-block;
 }
 
 .pricing__select-bn-content {
     padding-right: 20px;
 }
+
+.pricin__select-bn-arrow {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
 /* big screen*/
 a.pricing__select-plan:hover {
     background-color: var(--select-hover-color);
@@ -244,4 +257,17 @@ a.pricing__select-plan:hover {
 
 .pricing__arrow:hover {
     background-color: var(--svg-bn-hover);
+}
+
+.pricing__under-circles {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.pricing__under-circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: var(--under-circle-color);
 }
