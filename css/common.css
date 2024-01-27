@@ -30,6 +30,8 @@
     --footer-icon: #519ac9;
     --footer-icon-active: #3781b0;
     --footer-btn-up-bg: #fff;
+    --under-circle-color: #235565;
+
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
