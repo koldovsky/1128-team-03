@@ -29,6 +29,7 @@
     --footer-text: rgb(100, 122, 129);
     --footer-icon: #519ac9;
     --footer-icon-active: #3781b0;
+    --footer-btn-up-bg: #fff;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }
