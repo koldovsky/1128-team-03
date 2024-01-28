@@ -174,16 +174,17 @@ h1 {
   align-items: center;
   cursor: pointer;
   border: 1px solid var(--footer-bg);
+  border-bottom: 0;
   opacity: 0;
   transition: all 0.3s;
-  background-color: var(--footer-text);
+  background-color: var(--footer-btn-up-bg);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .btn-scroll-up span {
   color: var(--footer-links-active);
-  background-color: var(--footer-text);
+  background-color: var(--footer-btn-up-bg);
   user-select: none;
 }
 
