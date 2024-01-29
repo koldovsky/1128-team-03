@@ -6,23 +6,10 @@ function randomColorText() {
 
 setInterval(randomColorText, 1000);
 
-
-/*const birdSound = new Audio('audio/great-site.ogg');*/
+/*
 function soundClick() {
     const audio = new Audio(); // Создаём новый элемент Audio
-    audio.src = "audio/great-site"; // Указываем путь к звуку "клика"
+    audio.src = "audio/great-site.ogg"; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
-
-    /*birdSound.loop = false;
-      birdSound.play();*/
-
-    /*let birdSound = new Audio('audio/great-site.ogg');
-      birdSound.loop = false;
-      birdSound.play();*/
-
-    /*let myAudio = new Audio('audio/great-site.ogg');
-      myAudio.loop = true;
-      myAudio.play();*/
-
-
 }
+*/
