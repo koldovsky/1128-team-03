@@ -2,11 +2,13 @@
     margin-top: 60px;
     margin-bottom: 50px;
     position: relative;
+
 }
 
 .pricing__content {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .pricing__info {
@@ -72,8 +74,10 @@ p.pricing__description {
 }
 
 .pricing__carousel-plan {
+    display: flex;
+    flex-wrap: nowrap;
     position: relative;
-    width: 100%;
+    max-width: 1200px;
     overflow: hidden;
     margin-top: 30px;
     margin-bottom: 35px;
@@ -194,7 +198,6 @@ ul li {
     fill: var(--svg-arrow-color);
     background-color: var(--svg-bg-arrow-mobile-color);
     margin-top: 170px;
-    position:absolute;
     border: none;
     cursor: pointer;
 }
