@@ -14,12 +14,12 @@
   text-align: left;
 }
 .contacts__title {
-  font-size: 20px; /* Змінено для мобільної версії */
+  font-size: 20px; 
   margin-bottom: 10px;
   color: #519ac9
 }
 
-/* Блок "contacts_havequastion" */
+
 .contacts_havequastion,
 .contacts__information p,
 .contacts__address,
@@ -28,14 +28,14 @@
   margin-bottom: 10px;
 }
 
-/* Заголовки для адреси, годин та контактів */
+
 .contacts__address b,
 .contacts__hours b,
 .contacts__phoneandmail b {
   color: #235565;
 }
 
-/* Форма "contacts__form-box" */
+
 .contacts__form-box {
   padding: 15px;
   display: flex;
@@ -44,27 +44,26 @@
 }
 .contacts__form {
 }
-/* Стилі для текстових полів у формі */
+
 .contacts__form input,
 .contacts__form textarea {
-  border: 1px solid #000000;
   width: 100%;
-  padding: 8px; /* Змінено для мобільної версії */
+  padding: 8px; 
   margin-bottom: 10px;
   text-align: center;
 }
 
-/* Стилі для кнопки "Request a quote" */
+
 .contacts__form-box-raq {
-  padding: 8px 15px; /* Змінено для мобільної версії */
+  padding: 8px 15px; 
   background-color:rgb(35, 85, 101);
   color: rgb(255, 255, 255);
 }
 
-/* Стилі для картини у блоку "contacts__map" */
+
 .contacts__map iframe {
   width: 100%;
-  height: 200px; /* Змінено для мобільної версії */
+  height: 200px;
   border-radius: 8px;
 }
 @media only screen and (min-width: 320px) {
