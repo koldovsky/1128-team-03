@@ -10,6 +10,8 @@
 }
 .contacts__information {
   padding-right: 0; 
+  padding-left: 20px;
+  text-align: left;
 }
 .contacts__title {
   font-size: 20px; /* Змінено для мобільної версії */
@@ -44,6 +46,7 @@
   width: 100%;
   padding: 8px; /* Змінено для мобільної версії */
   margin-bottom: 10px;
+  text-align: center;
 }
 
 /* Стилі для кнопки "Request a quote" */
@@ -75,4 +78,10 @@
   .contacts__map iframe {
     height: 200px;
   }
+}
+.contacts__commonbox {
+  font-size: 16px;
+}
+.contacts__mainquastion {
+  font-size: 32px;
 }
