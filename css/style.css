@@ -174,16 +174,17 @@ h1 {
   align-items: center;
   cursor: pointer;
   border: 1px solid var(--footer-bg);
+  border-bottom: 0;
   opacity: 0;
   transition: all 0.3s;
-  background-color: var(--footer-text);
+  background-color: var(--footer-btn-up-bg);
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
 .btn-scroll-up span {
   color: var(--footer-links-active);
-  background-color: var(--footer-text);
+  background-color: var(--footer-btn-up-bg);
   user-select: none;
 }
 
@@ -307,6 +308,15 @@ h1 {
 .footer__welcome span {
   color: var(--footer-icon);
   font-weight: 600;
+}
+
+.cat-surprise {
+  margin-bottom: -150px;
+  width: 150px;
+  height: 150px;
+  position: sticky;
+  z-index: 105;
+  font-weight: bold;
 }
 
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
