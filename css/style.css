@@ -310,6 +310,15 @@ h1 {
   font-weight: 600;
 }
 
+.cat-surprise {
+  margin-bottom: -150px;
+  width: 150px;
+  height: 150px;
+  position: sticky;
+  z-index: 105;
+  font-weight: bold;
+}
+
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/
 
 /*# sourceMappingURL=style.css.map */

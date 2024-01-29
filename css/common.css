@@ -40,7 +40,9 @@ body {
     display: grid;
     justify-content: center;
 }
-
+main {
+    position: relative;
+}
 .container-custom {
     max-width: 1200px;
     padding: 0 24px;
