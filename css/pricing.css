@@ -170,7 +170,6 @@ ul li {
 
 .pricing__carousel-plan .pricing__carousel-slide {
     flex: 0 0 100%;
-    padding: 20px;
     box-sizing: border-box;
 }
 
@@ -212,13 +211,13 @@ ul li {
 }
 
 .pricing__button-left {
-    left: 20px;
-    top: calc(50% - 378px);
+    left: 5px;
+    top: calc(50% - 586px);
 }
 
 .pricing__button-right {
-   right: 20px;
-   top: calc(50% - 378px); 
+   right: 5px;
+   top: calc(50% - 586px); 
 }
 
 pricing__select-button {
@@ -253,4 +252,42 @@ pricing__select-button {
     font-size: 0.75rem;
     font-weight: 600;
 }
+
+* big screen*/
+a.pricing__select-plan:hover {
+    background-color: var(--select-hover-color);
+    border-color: var(--select-hover-color);
+    text-decoration: none;
+    color: var(--button-text-color);
+}
+
+.pricing__arrow:hover {
+    background-color: var(--svg-bn-hover);
+}
+
+/* slideshow indicators */
+.pricing__indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input.pricing__indicator {
+    display: none; /* Hide the actual radio buttons */
+  }
+  
+  label {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for the selected indicator */
+  input:checked + label {
+    background-color: var(--indicator-color);
+  }
 
