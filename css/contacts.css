@@ -37,12 +37,17 @@
 
 /* Форма "contacts__form-box" */
 .contacts__form-box {
-  padding: 15px; /* Змінено для мобільної версії */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 }
-
+.contacts__form {
+}
 /* Стилі для текстових полів у формі */
 .contacts__form input,
 .contacts__form textarea {
+  border: 1px solid #000000;
   width: 100%;
   padding: 8px; /* Змінено для мобільної версії */
   margin-bottom: 10px;
@@ -62,10 +67,6 @@
   height: 200px; /* Змінено для мобільної версії */
   border-radius: 8px;
 }
-
-/* Додаткові стилі можна додати за потреби */
-
-/* Медіа-запит для мобільної версії */
 @media only screen and (min-width: 320px) {
   .contacts__commonbox {
     max-width: 320px;
@@ -84,4 +85,8 @@
 }
 .contacts__mainquastion {
   font-size: 32px;
+}
+.contacts__form-box-raq {
+border-radius: 5px;
+max-width: 100%;
 }
