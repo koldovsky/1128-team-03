@@ -23,67 +23,9 @@
         </div>
       </div>
     </div>
-    <div class="pricing__plan">
-      <div class="pricing__details">
-        <article class="pricing__details-card">
-          <p class="pricing__price">$50</p>
-          <h3 class="pricing__plan-title">Initial Checkup</h3>
-          <ul class="pricing__features">
-            <li class="pricing__features-checkmark">
-              Checkup by a veterinarian
-            </li>
-            <li class="pricing__features-checkmark">Care recommendations</li>
-            <li class="pricing__features-crossmark">Laboratory tests</li>
-            <li class="pricing__features-crossmark">Dental care</li>
-          </ul>
-          <div class="pricing__select-button">
-            <a href="#" class="pricing__select-plan"
-              ><span class="pricing__select-bn-content">Select Plan</span><span class="pricing__select-bn-arrow">&rarr;</span>
-              </a
-            >
-          </div>
-        </article>
-      </div>
-      <div class="pricing__details">
-        <article class="pricing__details-card">
-          <p class="pricing__price">$75</p>
-          <h3 class="pricing__plan-title">Full Checkup</h3>
-          <ul class="pricing__features">
-            <li class="pricing__features-checkmark">
-              Checkup by a veterinarian
-            </li>
-            <li class="pricing__features-checkmark">Checkup by a dentist</li>
-            <li class="pricing__features-checkmark">Laboratory tests</li>
-            <li class="pricing__features-crossmark">Preventive vaccination</li>
-          </ul>
-          <div class="pricing__select-button">
-            <a href="#" class="pricing__select-plan"
-              ><span class="pricing__select-bn-content">Select Plan</span>
-              &rarr;</a
-            >
-          </div>
-        </article>
-      </div>
-      <div class="pricing__details">
-        <article class="pricing__details-card">
-          <p class="pricing__price">$100</p>
-          <h3 class="pricing__plan-title">Vaccination</h3>
-          <ul class="pricing__features">
-            <li class="pricing__features-checkmark">3 available features</li>
-            <li class="pricing__features-checkmark">10 requests per month</li>
-            <li class="pricing__features-checkmark">General support</li>
-            <li class="pricing__features-checkmark">Personal consultations</li>
-          </ul>
-          <div class="pricing__select-button">
-            <a href="#" class="pricing__select-plan"
-              ><span class="pricing__select-bn-content">Select Plan</span>
-              &rarr;</a
-            >
-          </div>
-        </article>
-      </div>
-      <button type="button" class="pricing__arrow-left">
-        <svg class="arrow__svg-left" viewBox="0 0 30 30">
+    <div class="pricing__carousel-plan">
+      <button type="button" class="pricing__button-left">
+        <svg class="pricing__button-prev" viewBox="0 0 30 30">
           <defs>
             <path
               d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
@@ -97,8 +39,67 @@
           ></use>
         </svg>
       </button>
-      <button type="button" class="pricing__arrow-right">
-        <svg class="arrow__svg-right" viewBox="0 0 30 30">
+      
+        <div class="pricing__carousel-inner">
+          <article class="pricing__carousel-slide">
+            <p class="pricing__price">$50</p>
+            <h3 class="pricing__plan-title">Initial Checkup</h3>
+            <ul class="pricing__features">
+              <li class="pricing__features-checkmark">
+                Checkup by a veterinarian
+              </li>
+              <li class="pricing__features-checkmark">Care recommendations</li>
+              <li class="pricing__features-crossmark">Laboratory tests</li>
+              <li class="pricing__features-crossmark">Dental care</li>
+            </ul>
+            <div class="pricing__select-button">
+              <a href="#" class="pricing__select-plan"
+                ><span class="pricing__select-bn-content">Select Plan</span
+                ><span class="pricing__select-bn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="pricing__carousel-inner">
+          <article class="pricing__carousel-slide">
+            <p class="pricing__price">$75</p>
+            <h3 class="pricing__plan-title">Full Checkup</h3>
+            <ul class="pricing__features">
+              <li class="pricing__features-checkmark">
+                Checkup by a veterinarian
+              </li>
+              <li class="pricing__features-checkmark">Checkup by a dentist</li>
+              <li class="pricing__features-checkmark">Laboratory tests</li>
+              <li class="pricing__features-crossmark">Preventive vaccination</li>
+            </ul>
+            <div class="pricing__select-button">
+              <a href="#" class="pricing__select-plan"
+                ><span class="pricing__select-bn-content">Select Plan</span
+                ><span class="pricing__select-bn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+        <div class="pricing__carousel-inner">
+          <article class="pricing__carousel-slide">
+            <p class="pricing__price">$100</p>
+            <h3 class="pricing__plan-title">Vaccination</h3>
+            <ul class="pricing__features">
+              <li class="pricing__features-checkmark">3 available features</li>
+              <li class="pricing__features-checkmark">10 requests per month</li>
+              <li class="pricing__features-checkmark">General support</li>
+              <li class="pricing__features-checkmark">Personal consultations</li>
+            </ul>
+            <div class="pricing__select-button">
+              <a href="#" class="pricing__select-plan"
+                ><span class="pricing__select-bn-content">Select Plan</span
+                ><span class="pricing__select-bn-arrow">&rarr;</span>
+              </a>
+            </div>
+          </article>
+        </div>
+      <button type="button" class="pricing__button-right">
+        <svg class="pricing__button-next" viewBox="0 0 30 30">
           <defs>
             <path
               d="M19.533 15l-9.1-9.45c-.577-.6-.577-1.5 0-2.1.578-.6 1.445-.6 2.023 0l10.11 10.5c.29.3.434.75.434 1.05 0 .45-.144.75-.433 1.05l-10.111 10.5c-.29.3-.578.45-1.012.45-.433 0-.722-.15-1.01-.45-.578-.6-.578-1.5 0-2.1l9.1-9.45z"
@@ -112,11 +113,32 @@
           ></use>
         </svg>
       </button>
-      <div class="pricing__under-circles">
-        <div class="pricing__under-circle"></div>
-        <div class="pricing__under-circle"></div>
-        <div class="pricing__under-circle"></div>
-      </div>
+    </div>
+    <div class="pricing__indicators">
+      <input
+        type="radio"
+        id="slide1"
+        name="slider"
+        class="pricing__indicator"
+        checked
+      />
+      <label for="slide1"></label>
+
+      <input
+        type="radio"
+        id="slide2"
+        name="slider"
+        class="pricing__indicator"
+      />
+      <label for="slide2"></label>
+
+      <input
+        type="radio"
+        id="slide3"
+        name="slider"
+        class="pricing__indicator"
+      />
+      <label for="slide3"></label>
     </div>
   </div>
 </section>
