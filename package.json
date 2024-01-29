@@ -1,0 +1,15 @@
+{
+  "name": "1128-team-03",
+  "version": "1.0.0",
+  "description": "This template repository includes preconfigured GitHub Action that will validate html files in a project with (HTMLProofer)[https://github.com/gjtorikian/html-proofer/].",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --env-file=.env server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
