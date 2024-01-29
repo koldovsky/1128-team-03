@@ -32,14 +32,14 @@
     --footer-btn-up-bg: #fff;
     --under-circle-color: #235565;
     --blink-text: 'red'!important;
-
     --indicator-color: #235565;
-    font-family: "Poppins", sans-serif;
+    font-family: "Poppins", sans-serif!important;
     scroll-behavior: smooth;
 }
 body {
     display: grid;
     justify-content: center;
+    font-family: "Poppins", sans-serif!important;
 }
 main {
     position: relative;
