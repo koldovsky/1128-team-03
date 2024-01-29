@@ -33,6 +33,7 @@
     --under-circle-color: #235565;
     --blink-text: 'red'!important;
 
+    --indicator-color: #235565;
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
 }

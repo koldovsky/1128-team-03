@@ -2,11 +2,13 @@
     margin-top: 60px;
     margin-bottom: 50px;
     position: relative;
+
 }
 
 .pricing__content {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .pricing__info {
@@ -71,21 +73,21 @@ p.pricing__description {
     }
 }
 
-.pricing__plan {
+.pricing__carousel-plan {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     align-items: center;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    padding-right: 15px;
-    padding-left: 15px;
+    position: relative;
+    max-width: 1200px;
+
+    margin: auto;
 }
 
-.pricing__details {
-    width: 100%;
-    max-width: 300px;
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.pricing__carousel-slide {
+    background-color: var(--details-card-bg-color);
+    padding: 31px;
+    line-height: 1.5;
+    font-weight: normal;
 }
 
 .pricing__price {
@@ -163,62 +165,71 @@ ul li {
     background-color: var(--crossmark-color);
 }
 
-.pricing__details-card {
-    background-color: var(--details-card-bg-color);
-    padding: 31px;
-    line-height: 1.5;
-    font-weight: normal;
+.pricing__carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
 }
 
-/*
-@media (min-width: 767px;) {
-    .pricing__plan {
-        flex-direction: row;
+.pricing__carousel-plan .pricing__carousel-slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+}
+
+@media (min-width: 767px) {
+    .pricing__carousel-plan .pricing__carousel-slide {
+        flex: 0 0 50%;
     }
-    .pricing__content {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+    .pricing__carousel-plan .pricing__carousel-slide {
+        flex: 0 0 33.33%;
     }
-}*/
-
-.arrow__svg-left {
-    transform: rotateY(180deg);
-    width: 100%;
-    height: 100%;
 }
 
-.arrow__svg-right {
-    width: 100%;
-    height: 100%;
-}
 
-.pricing__arrow-left, .pricing__arrow-right {
+.pricing__carousel-plan .pricing__button-left, .pricing__button-right {
     height: 24px;
     width: 24px;
     padding: 4px;
     border-radius: 50%;
     fill: var(--svg-arrow-color);
     background-color: var(--svg-bg-arrow-mobile-color);
-    margin-top: 170px;
-    position:absolute;
+    /*margin-top: 170px;*/
+
+    border: none;
+    cursor: pointer;
 }
 
-.pricing__arrow-left {
-    left: 20px;
-    top: calc(50% - 378px);
+.pricing__carousel-plan .pricing__button-prev {
+    transform: rotateY(180deg);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: visible!important;
+
 }
 
-.pricing__arrow-right {
-    right: 20px;
-    top: calc(50% - 378px);
+.pricing__button-next {
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: visible!important;
 }
 
-.pricing__select-button {
+.pricing__button-left {
+    left: 5px;
+    top: calc(50% - 586px);
+}
+
+.pricing__button-right {
+   right: 5px;
+   top: calc(50% - 586px); 
+}
+
+pricing__select-button {
     margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+    display: inline-block;
 }
 
 .pricing__select-plan {
@@ -244,30 +255,46 @@ ul li {
     padding-right: 20px;
 }
 
-.pricin__select-bn-arrow {
+.pricing__select-bn-arrow {
     font-size: 0.75rem;
     font-weight: 600;
 }
 
-/* big screen*/
+* big screen*/
 a.pricing__select-plan:hover {
     background-color: var(--select-hover-color);
     border-color: var(--select-hover-color);
+    text-decoration: none;
+    color: var(--button-text-color);
 }
 
 .pricing__arrow:hover {
     background-color: var(--svg-bn-hover);
 }
 
-.pricing__under-circles {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-}
-
-.pricing__under-circle {
-    height: 10px;
-    width: 10px;
+/* slideshow indicators */
+.pricing__indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  input.pricing__indicator {
+    display: none; /* Hide the actual radio buttons */
+  }
+  
+  label {
+    width: 12px;
+    height: 12px;
+    background-color: #ccc;
     border-radius: 50%;
-    background-color: var(--under-circle-color);
-}
+    margin: 0 5px;
+    cursor: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Style for the selected indicator */
+  input:checked + label {
+    background-color: var(--indicator-color);
+  }
+
