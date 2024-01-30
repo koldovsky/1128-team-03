@@ -103,7 +103,7 @@ p.pricing__description {
     font-weight: 500;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .pricing__price {
         font-size: 2.5rem;
     }
@@ -173,7 +173,7 @@ ul li {
     box-sizing: border-box;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
     .pricing__carousel-plan .pricing__carousel-slide {
         flex: 0 0 50%;
     }
@@ -220,7 +220,7 @@ ul li {
    top: calc(50% - 586px); 
 }
 
-pricing__select-button {
+.pricing__select-button {
     margin-top: 20px;
     display: inline-block;
 }
@@ -253,7 +253,7 @@ pricing__select-button {
     font-weight: 600;
 }
 
-* big screen*/
+/* big screen*/
 a.pricing__select-plan:hover {
     background-color: var(--select-hover-color);
     border-color: var(--select-hover-color);
