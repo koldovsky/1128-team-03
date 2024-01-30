@@ -4,6 +4,7 @@ document.addEventListener('partialsLoaded', () => {
     import('./header.js');
     import('./cat-surprise.js');
     import('./workers-counter.js');
+
 });
 
 function soundClick() {

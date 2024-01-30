@@ -19,7 +19,7 @@ async function sendChatMessage() {
 }
 
 async function refreshChatData() {
-    const data = await (await fetch('/api/chat') ).json();
+    const data = await (await fetch('/api/chat')).json();
     document.querySelector('.chat__response').innerText = data.data;
 }
 
