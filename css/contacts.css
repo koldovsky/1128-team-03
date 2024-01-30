@@ -1,6 +1,7 @@
 .contacts {
   padding: 20px;
-  background-color: #f8f8f8;
+  max-width: 1500px;
+  margin: auto;
 }
 .contacts__commonbox {
   display: flex;
@@ -41,6 +42,7 @@
   display: flex;
   justify-content: center;
   align-items: baseline;
+  background-color: #f8f8f8;
 }
 .contacts__form {
 }
