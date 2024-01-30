@@ -2,11 +2,13 @@
     margin-top: 60px;
     margin-bottom: 50px;
     position: relative;
+
 }
 
 .pricing__content {
     display: flex;
     flex-direction: column;
+    margin: auto;
 }
 
 .pricing__info {
@@ -72,13 +74,13 @@ p.pricing__description {
 }
 
 .pricing__carousel-plan {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
     position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin-top: 30px;
-    margin-bottom: 35px;
-    padding-right: 15px;
-    padding-left: 15px;
+    max-width: 1200px;
+
+    margin: auto;
 }
 
 .pricing__carousel-slide {
@@ -193,8 +195,8 @@ ul li {
     border-radius: 50%;
     fill: var(--svg-arrow-color);
     background-color: var(--svg-bg-arrow-mobile-color);
-    margin-top: 170px;
-    position:absolute;
+    /*margin-top: 170px;*/
+
     border: none;
     cursor: pointer;
 }
@@ -203,11 +205,16 @@ ul li {
     transform: rotateY(180deg);
     width: 100%;
     height: 100%;
+    z-index: 100;
+    overflow: visible!important;
+
 }
 
 .pricing__button-next {
     width: 100%;
     height: 100%;
+    z-index: 100;
+    overflow: visible!important;
 }
 
 .pricing__button-left {
