@@ -1,58 +1,93 @@
-.contacts__form-box {
-  align-items: baseline;
-  background-color: rgb(255, 255, 255);
-  margin:auto;
-  max-width: 1200px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.contacts__form {
-  display: flex;
-  flex-direction: column;
-}
-.contacts__form-box input,
-.contacts__form-box textarea {
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.contacts__form-box {
-  max-width: 1200px;
+.contacts {
+  padding: 20px;
+  max-width: 1800px;
   margin: auto;
-
-}
-.contacts__form-box-raq {
-  background-color: rgb(81, 154, 201);
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-  font-size: 12px;
-}
-p {
-  font-family:  Poppins, sans-serif;
-}
-.contacts__information {
-  max-width: 1200px;
-  margin: auto;
-}
-
-.contacts__title {
-  color: #519ac9;
-  font-size: 24px;
-  margin-bottom: 12px;
-}
-.contacts__mainquastion {
-  font-weight: bold;
-  color: rgb(36, 45, 49);
-  heigh: auto;
-  font-size: 35px;
-}
-
-.contacts__container {
-  margin-top: 20px;
 }
 .contacts__commonbox {
-  align-items: center;
-justify-content: center;
+  display: flex;
+  flex-direction: column; 
+  max-width: 320px; 
+  margin: 0 auto;
+}
+.contacts__information {
+  padding-right: 0; 
+  padding-left: 20px;
+  text-align: left;
+}
+.contacts__title {
+  font-size: 20px; 
+  margin-bottom: 10px;
+  color: #519ac9
+}
+
+
+.contacts_havequastion,
+.contacts__information p,
+.contacts__address,
+.contacts__hours,
+.contacts__phoneandmail {
+  margin-bottom: 10px;
+}
+
+
+.contacts__address b,
+.contacts__hours b,
+.contacts__phoneandmail b {
+  color: #235565;
+}
+
+
+.contacts__form-box {
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  background-color: #f8f8f8;
+}
+.contacts__form {
+}
+
+.contacts__form input,
+.contacts__form textarea {
+  width: 100%;
+  padding: 8px; 
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+.contacts__form-box-raq {
+  padding: 8px 15px; 
+  background-color:rgb(35, 85, 101);
+  color: rgb(255, 255, 255);
+}
+
+
+.contacts__map iframe {
+  width: 100%;
+  height: 200px;
+  border-radius: 8px;
+}
+@media only screen and (min-width: 320px) {
+  .contacts__commonbox {
+    max-width: 320px;
+  }
+
+  .contacts__title {
+    font-size: 20px;
+  }
+
+  .contacts__map iframe {
+    height: 200px;
+  }
+}
+.contacts__commonbox {
+  font-size: 16px;
+}
+.contacts__mainquastion {
+  font-size: 32px;
+}
+.contacts__form-box-raq {
+border-radius: 5px;
+max-width: 100%;
 }
