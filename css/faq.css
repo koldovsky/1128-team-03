@@ -1,6 +1,45 @@
+.info__switch {
+  display: none;
+  
+}
+label {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+}
+input:checked + label {
+  background-color: rgba(0, 0, 0, 0) !important;
+}
+.info__body {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.4s;
+}
+
+.info__switch:checked~.info__body {
+  max-height: 100px;
+}
+
+.info__headline::before {
+  content: "";
+  position: absolute;
+  
+}
+
+.info__switch:checked~.info__headline::before {
+  transform: rotate(180deg) translateY(6px);
+}
+
+.info__headline {
+  position: relative;
+  margin-bottom: 15px;
+  user-select: none;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+
+
 .faq__animals-photo-list__items {
-  display: grid;
-  grid-template-columns: 40px 1fr 40px;
   min-height: 150px;
 }
 
@@ -56,22 +95,22 @@ justify-content: center;
   margin-top: 20px;
 }
 .faq__default-answers__item{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 0;
 }
 .faq__default-answers {
   max-width: 19.4rem;
   padding-left: 24px;
 }
 .faq__animals-photo-list {
-  max-width: 19.4rem;
+  max-width: 50%;
   padding-left: 24px;
   position: relative;
 }
 hr {
   height: 0.5px;
-  background-color: rgb(100, 122, 129);;
-  border-color: rgb(100, 122, 129);;
+  background-color: rgb(100, 122, 129);
+  border-color: rgb(100, 122, 129);
+  margin: 0 !important;
 }
 .faq__all-block {
   display: flex;
@@ -115,6 +154,9 @@ hr {
   border-radius: 100%;
 }
 @media (min-width: 768px){
+  .faq__animals-photo-list {
+    width: 100%;
+  }
   .faq__all-block {
     flex-direction: row;
   }
@@ -127,4 +169,5 @@ hr {
   .faq__default-answers {
     max-width: 34.1rem;
   }
+  
 }
