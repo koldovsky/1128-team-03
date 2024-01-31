@@ -1,9 +1,9 @@
 const slides = [
-    '<div class="partners__carousel-slide"><img src="img/partners-carousel-royalcanin.webp" alt="Royal Canin"></div>',
-    '<div class="partners__carousel-slide"><img src="img/partners-carousel-animalplanet.webp" alt="Animal Planet"></div>',
-    '<div class="partners__carousel-slide"><img src="img/partners-carousel-iams.webp" alt="IAMS"></div>',
-    '<div class="partners__carousel-slide"><img src="img/partners-carousel-friskies.webp" alt="Friskies"></div>',
-    '<div class="partners__carousel-slide"><img src="img/partners-carousel-kitekat.webp" alt="KITEKAT"></div>',
+    '<div class="partners__carousel-slide"><img src="/workspaces/1128-team-03/img/partners-carousel-royalcanin.webp" alt="Royal Canin"></div>',
+    '<div class="partners__carousel-slide"><img src="/workspaces/1128-team-03/img/partners-carousel-animalplanet.webp" alt="Animal Planet"></div>',
+    '<div class="partners__carousel-slide"><img src="/workspaces/1128-team-03/img/partners-carousel-iams.webp" alt="IAMS"></div>',
+    '<div class="partners__carousel-slide"><img src="/workspaces/1128-team-03/img/partners-carousel-friskies.webp" alt="Friskies"></div>',
+    '<div class="partners__carousel-slide"><img src="/workspaces/1128-team-03/img/partners-carousel-kitekat.webp" alt="KITEKAT"></div>',
 ];
 
 let currentSlideIdx = 0;
