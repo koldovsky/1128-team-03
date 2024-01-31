@@ -6,11 +6,11 @@ function randomColorText() {
 
 setInterval(randomColorText, 1000);
 
-function soundClick() {
+function soundClickHeader() {
     const audio = new Audio(); // Создаём новый элемент Audio
     audio.src = "audio/great-site.ogg"; // Указываем путь к звуку "клика"
     audio.autoplay = true; // Автоматически запускаем
 }
 
 const buttonGreat = document.querySelector('.buttonGreat');
-buttonGreat.addEventListener('click', soundClick);
+buttonGreat.addEventListener('click', soundClickHeader);
