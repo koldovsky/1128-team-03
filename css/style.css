@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /*Обнуление*/
 @import "common.css";
+@import "../css/why-us.css";
 @import "service-carousel.css";
 @import "pricing.css";
 @import "faq.css";
@@ -9,6 +10,7 @@
 @import "care.css";
 @import "car.with.animal.css";
 @import "banner.css";
+@import "about-us.css";
 * {
   padding: 0;
   margin: 0;
@@ -158,59 +160,39 @@ h1 {
   padding: 0;
 }
 
-.why-choose-us {
-  text-align: center;
-}
-
-.why-choose-us h2 {
-  width: auto;
-  height: auto;
-  font-weight: bold;
-}
-
-.why-choose-us__items {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  justify-content: center;
-}
-
-.why-choose-us__item {
-  text-align: left;
-  padding: 20px;
+/* Button UP */
+.btn-scroll-up {
+  position: fixed;
+  z-index: 100;
+  right: 12px;
+  bottom: -60px;
   display: flex;
+  width: 40px;
+  height: 60px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--footer-bg);
+  border-bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  background-color: var(--footer-btn-up-bg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
-.why-choose-us__item img {
-  color: rgb(36, 45, 49);
-  width: 100px;
-  height: auto;
+.btn-scroll-up span {
+  color: var(--footer-links-active);
+  background-color: var(--footer-btn-up-bg);
+  user-select: none;
 }
 
-.why-choose-us__item h3 {
-  margin-top: 10px;
+.btn-scroll-up.show {
+  opacity: 1;
+  bottom: 0;
 }
 
-.why-choose-us__item p {
-  color: gray;
-  max-width: 100%;
-  word-wrap: break-word;
-  text-align: center;
-}
-
-@media only screen and (max-width: 768px) {
-  .why-choose-us__items {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-@media only screen and (max-width: 480px) {
-  .why-choose-us__items {
-    grid-template-columns: 1fr;
-  }
-}
 .footer__wrap-img {
   height: 100px;
 }
@@ -326,6 +308,15 @@ h1 {
 .footer__welcome span {
   color: var(--footer-icon);
   font-weight: 600;
+}
+
+.cat-surprise {
+  margin-bottom: -150px;
+  width: 150px;
+  height: 150px;
+  position: sticky;
+  z-index: 105;
+  font-weight: bold;
 }
 
 /*Ваши .scss и .css нужно указать в ковычках вместо "стили_студента_номер"*/

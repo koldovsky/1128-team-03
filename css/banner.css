@@ -36,10 +36,11 @@
   }
   
   .banner__secondblock--heading {
-    font-size: 52px;
+    font-size: 56px;
     font-family: Signika;
     color: #242D31;
     margin-bottom: 20px;
+    font-weight: bold;
 
   }
   
@@ -51,8 +52,28 @@
   }
 .button__banner--pagedown{
     background-color:#235565;
-    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
 }
 .button__banner--tel{
-    
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #235565;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+.button__banner--tel:hover {
+  background: #235565 ;
+  color:white;
+  text-decoration: none;
+
+}
+.button__banner--pagedown:hover {
+  background: lightblue;
 }

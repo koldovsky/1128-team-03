@@ -1,3 +1,37 @@
+/* Button UP */
+.btn-scroll-up {
+  position: fixed;
+  z-index: 100;
+  right: 12px;
+  bottom: -60px;
+  display: flex;
+  width: 40px;
+  height: 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid var(--footer-bg);
+  border-bottom: 0;
+  opacity: 0;
+  transition: all 0.3s;
+  background-color: var(--footer-btn-up-bg);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.btn-scroll-up span {
+  color: var(--footer-links-active);
+  background-color: var(--footer-btn-up-bg);
+  user-select: none;
+}
+
+.btn-scroll-up.show {
+  opacity: 1;
+  bottom: 0;
+}
+
+
 .footer {
   &__wrap-img {
     height: 100px;
