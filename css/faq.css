@@ -1,3 +1,20 @@
+.faq__animals-photo-list__items {
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  min-height: 150px;
+}
+
+.faq__animals-photo-list__items div {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.faq__animals-photo-list__items img {
+  width: 100%;
+}
+
+
 .faq__default-answers__title {
   color: rgb(81, 154, 201);
   font-family: Poppins, sans-serif;
@@ -52,9 +69,6 @@
   max-width: 19.4rem;
   padding-left: 24px;
   position: relative;
-}
-.faq__animals-photo-item {
-  max-width: 17rem;
 }
 hr {
   height: 0.5px;
