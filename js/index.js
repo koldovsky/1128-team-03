@@ -8,8 +8,3 @@ document.addEventListener('partialsLoaded', () => {
 
 });
 
-function soundClick() {
-  const audio = new Audio(); // Создаём новый элемент Audio
-  audio.src = "audio/great-site.ogg"; // Указываем путь к звуку "клика"
-  audio.autoplay = true; // Автоматически запускаем
-}
