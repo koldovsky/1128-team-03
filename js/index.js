@@ -6,5 +6,9 @@ document.addEventListener('partialsLoaded', () => {
     import('./workers-counter.js');
     import('./pricing.js');
     import('./faq.js');
+    import('./partners-carousel.js');
+    import('./navigation.js');      
 });
+
+
 
