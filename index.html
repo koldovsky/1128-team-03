@@ -15,10 +15,14 @@
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-<header data-include="header.partial.html"></header>
+<header>
+    <div class="wrapper">
+        <div data-include="header.partial.html"></div>
+        <div data-include="banner.partial.dog-about-us.html"></div>
+    </div>
+</header>
 <main>
-    <section data-include="cat-surprise.partial.html"></section>
-    <section data-include="banner.partial.dog-about-us.html"></section>
+    <div data-include="cat-surprise.partial.html"></div>
     <section data-include="index.why-us.partial.html"></section>
     <section data-include="index.service-carousel.partial.html"></section>
     <section data-include="index.about-us.partial.html"></section> <!--перемещен на верное место-->

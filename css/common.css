@@ -60,3 +60,9 @@ img {
 .highlight {
     color: red!important;
 }
+
+.wrapper {
+    background-image: url("https://res2.weblium.site/res/5f66341807730000225f82ac/5f69efd3c0c73d0021df2614");
+    background-size: cover;
+    background-position: center;
+}
