@@ -26,6 +26,7 @@
     --details-card-bg-color: #f8fafb;
     --footer-bg: #f8fafb;
     --footer-links: rgba(35, 85, 101, 0.46);
+    --contacts-links: rgba(35, 85, 101);
     --footer-links-active: #235565;
     --footer-text: rgb(100, 122, 129);
     --footer-icon: #519ac9;
@@ -58,4 +59,10 @@ img {
 
 .highlight {
     color: red!important;
+}
+
+.wrapper {
+    background-image: url("https://res2.weblium.site/res/5f66341807730000225f82ac/5f69efd3c0c73d0021df2614");
+    background-size: cover;
+    background-position: center;
 }

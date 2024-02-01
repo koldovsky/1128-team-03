@@ -1,0 +1,17 @@
+.img-from-facts {
+    width: 700px ;
+    height: 700px;
+}
+
+.facts-choose{
+    width: 90px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.fact-button {
+    width: 150px;
+    height: 50px;
+    border-radius: 100px!important;
+
+}
