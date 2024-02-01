@@ -1,54 +1,66 @@
-<section id="contact-section" class="contacts">
-    <div class="contacts__commonbox container-lg col-lg-8 d-flex flex-column flex-lg-row">
-        <div class="contacts__information col-12 col-lg-7">
-            <div>
-                <h2 class="contacts__title">-Contacts</h2>
-            </div>
-            <div class="contacts_havequastion mt-5 ml-1">
-                <p class="contacts__mainquastion"><b>Have Quastions?</b></p>
-            </div>
-            <p>Feel free to contact us to ask any question or book an appointment with a veterinarian.</p>
-            <div class="contacts__address mt-5 ml-1">
-                <p><b>Address</b> 80-05 78th Ave
-                    Flushing, NY 11385</p>
-            </div>
-            <div class="contacts__hours mt-5 ml-1">
-                <p><b>Hours</b> Monday - Saturday: 11 AM - 9 PM
-                    Sunday: 11 AM - 7 PM</p>
-            </div>
-            <div class="contacts__phoneandmail mt-5 ml-1">
-                <p><b>Contacts</b> +1 (234) 567 89 00
-                    healthypet@email.com</p>
-            </div>
-            <div class="contacts_clock mt-5 ml-1">
+<section class="contacts">
+    <div class="contacts__commonbox container">
+        <div class="row">
+            <div class="contacts__information col-12 col-lg-6">
+                <div>
+                    <h2 class="contacts__title">-Contacts</h2>
+                </div>
+                <div class="contacts_havequastion mt-5 ml-1">
+                    <p class="contacts__mainquastion"><b>Have Quastions?</b></p>
+                </div>
+                <p>Feel free to contact us to ask any question or book an appointment with a veterinarian.</p>
+                <div class="contacts__table">
+                    <div class="contacts__address adress">
+                        <b>Address</b>
+                        <span>80-05 78th Ave
+                            Flushing, NY 11385
+                        </span>
+                    </div>
+                    <div class="contacts__hours adress">
+                        <b>Hours</b>
+                        <span>Monday - Saturday: 11 AM - 9 PM
+                            Sunday: 11 AM - 7 PM
+                        </span>
+                    </div>
+                    <div class="contacts__phoneandmail adress">
+                        <b>Contacts</b>
+                        <span>
+                            <a href="tel:+12345678900">+1 (234) 567 89 00</a>
+                            <a href="mailto:healthypet@email.com">healthypet@email.com</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="contacts_clock mt-5 ml-1">
 
+                </div>
+
+                <div class="contacts__container">
+                    <div class="contacts__map ml-1">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18442.0312360889!2d35.042573802342936!3d48.4630276514509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dd7cd733b5%3A0xc5ea4bfee75bb576!2z0KLQpiDQn9Cw0YHRgdCw0LY!5e0!3m2!1sru!2sua!4v1704802985793!5m2!1sru!2sua"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
             </div>
-            
-            <div class="contacts__container">
-                <div class="contacts__map mt-5 ml-1">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18442.0312360889!2d35.042573802342936!3d48.4630276514509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40dbe2dd7cd733b5%3A0xc5ea4bfee75bb576!2z0KLQpiDQn9Cw0YHRgdCw0LY!5e0!3m2!1sru!2sua!4v1704802985793!5m2!1sru!2sua"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+            <div class="col-12 col-lg-6">
+                <div class="contacts__form-box">
+                    <form class="contacts__form" action="https://formspree.io/f/mleqeqap" method="post">
+                        <input class="contacts__form-box-name" type="text" name="full-name"
+                            placeholder="enter your full name*" required>
+                        <input class="contacts__form-box-tel" type="tel" name="full-name"
+                            placeholder="enter your tel*" required>
+                        <input class="contacts__form-box-email" type="email" name="full-name"
+                            placeholder="enter your email*" required>
+                        <textarea class="contacts__form-box-comments" name="comments" cols="30" rows="10"
+                            placeholder="comments"></textarea>
+                        <input class="contacts__form-box-raq" type="submit" value="Request a quote">
+                    </form>
                 </div>
             </div>
         </div>
-        <div class="col-12 col-lg-5">
-            <div class="contacts__form-box">
-                <form class="contacts__form" action="https://formspree.io/f/mleqeqap" method="post">
-                    <input class="contacts__form-box-name" type="text" name="full-name"
-                        placeholder="enter your full name*" required>
-                    <input class="contacts__form-box-tel mt-5 " type="tel" name="full-name" placeholder="enter your tel*"
-                        required>
-                    <input class="contacts__form-box-email mt-5 " type="email" name="full-name"
-                        placeholder="enter your email*" required>
-                    <textarea class="contacts__form-box-comments mt-5 " name="comments" cols="30" rows="10"
-                        placeholder="comments"></textarea>
-                    <input class="contacts__form-box-raq" type="submit" value="Request a quote">
-                </form>
-            </div>
-        </div>
+
     </div>
 
 
