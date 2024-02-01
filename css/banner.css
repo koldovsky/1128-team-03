@@ -44,6 +44,7 @@
     padding: 10px;
     color: white;
     border-radius: 5px;
+
 }
 .button__banner--tel{
   cursor: pointer;
@@ -54,6 +55,7 @@
   padding: 10px;
   border: 1px solid #000;
   border-radius: 5px;
+  margin-left: 10px;
 }
 .button__banner--tel:hover {
   background: #235565 ;
