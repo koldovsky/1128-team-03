@@ -1,57 +1,89 @@
-<div class="carousel">
-  <div class="carousel__track-container">
-    <ul class="carousel__track">
-      <li class="carousel__slide Pet Grooming">
-        <img src="img/scissors.gif" alt="Pet Grooming" class="carousel__image">
-        <h3>Pet Grooming</h3>
-        <p>Our groomers will make your pet the most beautiful. Grooming in our clinic is absolutely safe and comfortable
-          for your pet.</p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-      <li class="carousel__slide pet vaccination">
-        <img src="img/vaccine.gif" alt="Pet Vaccination" class="carousel__image">
-        <h3>Pet Vaccination</h3>
-        <p>Our veterinary clinic offers vaccinations for your pets. We use only certified vaccines and check the
-          allergic reaction. </p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-      <li class="carousel__slide surgeries&dental">
-        <img src="img/pet-center (1).gif" alt="Surgeries&Dental Care" class="carousel__image">
-        <h3>Surgeries & Dental Care</h3>
-        <p>Our surgeons and dentists will perform all the necessary procedures and interventions to restore the health
-          of your pet.</p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-      <li class="carousel__slide pet adoptation">
-        <img src="img/cat.gif" alt="Pet Adoptation" class="carousel__image">
-        <h3>Pet Adoption</h3>
-        <p>If you want to adopt a pet, our veterinary clinic will help you determine its condition. We also can help
-          with choosing a pet.</p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-      <li class="carousel__slide pet sitting">
-        <img src="img/daycare.gif" alt="Pet Sitting" class="carousel__image">
-        <h3>Pet Sitting</h3>
-        <p>If you need someone to look after your pet when you`re away, our specialists will be happy to do it. </p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-      <li class="carousel__slide microchipping">
-        <img src="img/dog.gif" alt="Microchipping" class="carousel__image">
-        <h3>Microchipping</h3>
-        <p>The chip contains a unique code with important information. If your pet is lost, it will be easy to return it
-          to you.</p>
-        <span style="font-weight:bold">Read More ➞</span>
-      </li>
-    </ul>
-  </div>
+<div class="veterinar-carousel container-lg col-8 mx-auto d-flex flex-column">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators bg-info mt-5 col-2 mx-auto pr-0 service-carousel__round">
+      <li data-target="#carouselExampleIndicators bg-dark" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/grooming.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Pet Grooming </h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">Our groomers will make your pet the most beautiful. Grooming in our clinic is absolutely safe and comfortable
+            for your pet.</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
+      <div class="carousel-item card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/vaccacination.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Pet Vaccination </h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">Our veterinary clinic offers vaccinations for your pets. We use only certified vaccines and check the
+            allergic reaction.</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
+      <div class="carousel-item card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/dental.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Surgeries & Dental Care </h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">Our surgeons and dentists will perform all the necessary procedures and interventions to restore the health
+            of your pet.</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
 
-  <div class="veterinar-carousel container-lg col-8 mx-auto d-flex flex-column">
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators bg-info mt-5 col-2 mx-auto pr-0 service-carousel__round">
-        <li data-target="Pet Grooming" data-slide-to="0" class="active"></li>
-        <li data-target="Pet Vaccination" data-slide-to="1"></li>
-        <li data-target="Surgeries&Dental Care" data-slide-to="2"></li>
-        <li data-target="Pet Adoptation" data-slide-to="3"></li>
-        <li data-target="Pet Sitting" data-slide-to="4"></li>
-        <li data-target="Microchipping" data-slide-to="5"></li>
+      <div class="carousel-item card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/adopt.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Pet Adoption </h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">If you want to adopt a pet, our veterinary clinic will help you determine its condition. We also can help
+            with choosing a pet.</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
+      <div class="carousel-item card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/pet-sit.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Pet Sitting</h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">If you need someone to look after your pet when you`re away, our specialists will be happy to do it.</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
+      <div class="carousel-item card h-100">
+        <img class="service-carousel__img img-fluid card-img-top rounded-circle align-center mx-auto mt-5 mb-4"
+             src="img/microc.png"
+             alt="Card image cap">
+        <div class="card-body">
+          <h4 class="card-title text-center">Microchipping</h4>
+          <p class="card-text carousel-any-p__subtitle fst-italic">The chip contains a unique code with important information. If your pet is lost, it will be easy to return it
+            to you</p>
+          <p class="card-text carousel-any-p__subtitle bold text-center mb-5">Read More ➞</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon bg-dark service-carousel__round" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon bg-dark service-carousel__round" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </div>
