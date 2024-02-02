@@ -3,7 +3,7 @@
     margin: 0;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0px 0px rgba(255, 255, 255, 0.2);
 }
 
 /* Ensure the track container takes the full width and height */
@@ -76,7 +76,7 @@
 }
 
 .carousel__indicator {
-    background-color: #ccc;
+    background-color: #ffffff;
     width: 15px;
     height: 15px;
     margin: 0 5px;
@@ -88,7 +88,7 @@
 
 .carousel__indicator--active,
 .carousel__indicator:hover {
-    background-color: #333333;
+    background-color: hsl(0, 9%, 89%);
 }
 .arrow {
     display: inline-block;
@@ -128,3 +128,7 @@
 
 .service-carousel__round {border-radius: 75px;
 }
+
+.carousel_read more {font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;}
