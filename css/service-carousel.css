@@ -147,3 +147,9 @@ p {
     border-bottom-color: #647a81 (35, 85, 101);
 
 }
+
+p1 {font-family: 'Poppins-Bold', 'Poppins', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #647a81;
+    border-bottom-color: #647a81 (35, 85, 101);}
