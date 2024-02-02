@@ -59,6 +59,7 @@
   background: #235565 ;
   color:white;
   text-decoration: none;
+}
 
 .button__banner--tel {
     cursor: pointer;
@@ -83,11 +84,11 @@
 
 @media screen and (max-width: 768px) {
     .banner__text {
-        width: 50%;
+        width: 60%;
         padding: 20px;
         text-align: center;
         margin: auto;
-        overflow-wrap: normal;
+
     }
 
     .banner__paragraph {

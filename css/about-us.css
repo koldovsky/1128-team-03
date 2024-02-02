@@ -2,4 +2,29 @@
     max-width: 570px;
     height: auto;
 }
+.dog_print{
+    max-width: 20px;
+}
+.service-item img.dog_print {
+    display: inline;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.pricing_button{
+    background-color: var(--bn-select-color);
+  border: 1px solid var(--bn-select-color);
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--button-text-color);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  width: 9.35rem;
+  height: 2.8rem;
+  display: inline-block;
+}
 /*# sourceMappingURL=about-us.css.map */

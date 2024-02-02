@@ -7,7 +7,7 @@ function displayAndChangeCounter() {
     employeeCounter++;
   } else {
   }
-  document.getElementById('employeeCounterDisplay').textContent = `Лічильник співробітників: ${employeeCounter}`;
+  document.getElementById('employeeCounterDisplay').textContent = `Workers online: ${employeeCounter}`;
   setTimeout(displayAndChangeCounter, 3500);
 }
 displayAndChangeCounter();
