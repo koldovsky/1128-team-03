@@ -22,7 +22,7 @@
 
 /* Individual slide styling */
 .carousel__slide {
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,6 +90,7 @@
 .carousel__indicator:hover {
     background-color: hsl(0, 9%, 89%);
 }
+
 .arrow {
     display: inline-block;
     width: 0;
@@ -97,44 +98,47 @@
     border-style: solid;
     margin: 10px;
     cursor: pointer;
-  }
-  
-  /* Left arrow */
-  .arrow-left::before {
+}
+
+/* Left arrow */
+.arrow-left::before {
     content: '';
     border-width: 10px 12px 10px 0;
     border-color: transparent #ddd9da transparent transparent;
-  }
-  
-  /* Right arrow */
-  .arrow-right::before {
+}
+
+/* Right arrow */
+.arrow-right::before {
     content: '';
     border-width: 10px 0 10px 12px;
     border-color: transparent transparent transparent #ddd9da;
-  }
-  
-  /* Hover effect for arrows */
-  .arrow:hover::before {
-    border-color: transparent #ddd9da transparent transparent;
-  }
-  
-  .arrow:hover::after {
-    border-color: transparent transparent transparent #ddd9da;
-  }
-  .service-carousel__img {
-    width: 170px!important;
-    height: 170px!important;
 }
 
-.service-carousel__round {border-radius: 75px;
+/* Hover effect for arrows */
+.arrow:hover::before {
+    border-color: transparent #ddd9da transparent transparent;
+}
+
+.arrow:hover::after {
+    border-color: transparent transparent transparent #ddd9da;
+}
+
+.service-carousel__img {
+    width: 170px !important;
+    height: 170px !important;
+}
+
+.service-carousel__round {
+    border-radius: 75px;
 }
 
 
 h4 {
-    font-family: 'Signika', sans-serif; /* Replace 'sans-serif' with a secondary font if needed */
+    font-family: 'Signika', sans-serif;
+    /* Replace 'sans-serif' with a secondary font if needed */
     color: #212736;
     font-weight: 900;
-    font-style:semi-bold;
+    font-style: semi-bold;
     border-bottom-color: #212736 (33, 39, 54);
     font-stretch: 100%;
     text-align: center;
@@ -150,10 +154,12 @@ p {
 
 }
 
-p1 {font-family: 'Poppins-Bold', 'Poppins', sans-serif;
+p1 {
+    font-family: 'Poppins-Bold', 'Poppins', sans-serif;
     font-weight: 400;
     font-style: normal;
     color: #647a81;
     border-bottom-color: #647a81 (35, 85, 101);
     text-align: center;
 }
+border{border: none !important; }
