@@ -103,23 +103,23 @@
   .arrow-left::before {
     content: '';
     border-width: 10px 12px 10px 0;
-    border-color: transparent #007bff transparent transparent;
+    border-color: transparent #ddd9da transparent transparent;
   }
   
   /* Right arrow */
   .arrow-right::before {
     content: '';
     border-width: 10px 0 10px 12px;
-    border-color: transparent transparent transparent #007bff;
+    border-color: transparent transparent transparent #ddd9da;
   }
   
   /* Hover effect for arrows */
   .arrow:hover::before {
-    border-color: transparent #0056b3 transparent transparent;
+    border-color: transparent #ddd9da transparent transparent;
   }
   
   .arrow:hover::after {
-    border-color: transparent transparent transparent #0056b3;
+    border-color: transparent transparent transparent #ddd9da;
   }
   .service-carousel__img {
     width: 170px!important;
