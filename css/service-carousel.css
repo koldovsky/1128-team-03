@@ -121,3 +121,10 @@
   .arrow:hover::after {
     border-color: transparent transparent transparent #0056b3;
   }
+  .service-carousel__img {
+    width: 170px!important;
+    height: 170px!important;
+}
+
+.service-carousel__round {border-radius: 75px;
+}
