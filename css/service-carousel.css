@@ -161,5 +161,8 @@ p1 {
     color: #647a81;
     border-bottom-color: #647a81 (35, 85, 101);
     text-align: center;
-}
-border{border: none !important; }
+   
+    .no-border {
+        border: none !important; 
+        box-shadow: none !important; 
+    }
