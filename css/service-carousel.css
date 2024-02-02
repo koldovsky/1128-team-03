@@ -136,6 +136,7 @@ h4 {
     font-weight: 900;
     font-style:semi-bold;
     border-bottom-color: #212736 (33, 39, 54);
+    font-stretch: 100%;
 }
 
 p {
