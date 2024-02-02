@@ -42,6 +42,23 @@
     padding: 10px;
     color: white;
     border-radius: 5px;
+
+}
+.button__banner--tel{
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: transparent;
+  color: #235565;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+.button__banner--tel:hover {
+  background: #235565 ;
+  color:white;
+  text-decoration: none;
 }
 
 .button__banner--tel {
@@ -67,11 +84,11 @@
 
 @media screen and (max-width: 768px) {
     .banner__text {
-        width: 50%;
+        width: 60%;
         padding: 20px;
         text-align: center;
         margin: auto;
-        overflow-wrap: normal;
+
     }
 
     .banner__paragraph {

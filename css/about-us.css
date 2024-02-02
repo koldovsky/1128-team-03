@@ -1,5 +1,69 @@
-.staff-image{
-    max-width: 570px;
-    height: auto;
+.CustomCont {
+    max-width: 10000px;
 }
+.title-about-us {
+    color: var(--title-color);
+    font-family: "Poppins", sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+
+.intro-about-us {
+    color: var(--subtitle-color);
+    font-size: 2.27rem;
+    line-height: normal;
+    font-family: "Signika", sans-serif;
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .description-about-us, .service-item {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    margin-top: 25px;
+    line-height: normal;
+    text-align: left;
+  }
+.staff-image{
+    min-width: auto;
+    height: auto;
+    margin-right:auto;
+}
+
+.services-list {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.dog_print{
+    max-width: 20px;
+}
+.pricing_button{
+  text-decoration: none;
+  background-color: var(--bn-select-color);
+  border-radius: 5px;
+  font-size: 0.72rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--button-text-color);
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 15px;
+  margin: 10px;
+  cursor: pointer;
+  width: 9.35rem;
+  height: 2.8rem;
+  display: inline-block;
+}
+.pricing_button:hover {
+    text-decoration: none;
+    background-color:#5e9ac8;
+    transition: 0.7s;
+    color: var(--button-text-color);
+}
+  
 /*# sourceMappingURL=about-us.css.map */

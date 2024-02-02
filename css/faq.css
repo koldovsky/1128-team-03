@@ -155,7 +155,9 @@ hr {
 }
 @media (min-width: 768px){
   .faq__animals-photo-list {
-    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .faq__all-block {
     flex-direction: row;
@@ -168,6 +170,10 @@ hr {
   }
   .faq__default-answers {
     max-width: 34.1rem;
+  } 
+}
+@media(min-width: 320px){
+  .faq__animals-photo-list {
+    max-width: 300px;
   }
-  
 }
