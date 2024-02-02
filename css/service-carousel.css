@@ -130,25 +130,12 @@
 }
 
 
- .h4 class_carousel {color:#212736;
-    font-family: Signika, sans-serif;
-font-feature-settings: normal;
-font-kerning: auto;
-font-optical-sizing: auto;
-font-size: 22px;
-font-stretch: 100%;
-font-style: normal;
-font-variant-alternates: normal;
-font-variant-caps: normal;
-font-variant-east-asian: normal;
-font-variant-ligatures: normal;
-font-variant-numeric: normal;
-font-variant-position: normal;
-font-variation-settings: normal;
-font-weight: 600;
-letter-spacing: normal;
-line-height: 28.6px;
-text-align: center;
-text-transform: none;
-vertical-align: baseline;}
+h4 {
+    font-family: 'Signika Light', sans-serif; /* Replace 'sans-serif' with a secondary font if needed */
+    color: #212736;
+}
 
+p {
+    font-family: 'Poppins-Bold', 'Poppins', sans-serif;
+    color: #647a81;
+}
