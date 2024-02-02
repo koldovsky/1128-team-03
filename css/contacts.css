@@ -101,6 +101,7 @@ max-width: 100%;
 .contacts .contacts__form-box-tel,
 .contacts .contacts__form-box-name {
   text-align: left;
+  font-size: 12px;
 }
 
 .contacts .contacts__form-box-comments:focus,
