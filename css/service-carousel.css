@@ -133,9 +133,13 @@
 h4 {
     font-family: 'Signika Light', sans-serif; /* Replace 'sans-serif' with a secondary font if needed */
     color: #212736;
+    font-weight: 400;
+    font-style:italic;
 }
 
 p {
     font-family: 'Poppins-Bold', 'Poppins', sans-serif;
+    font-weight: 700;
+    font-style: normal;
     color: #647a81;
 }
