@@ -1,3 +1,38 @@
+.wishes-bg{
+  background-image: url("../img/wishes.jpeg");
+  background-size: 680px;
+  background-repeat: no-repeat;
+  background-position: center 50px;
+}
+
+.chat__response{
+  font-size: 17px;
+  width: fit-content;
+  text-align: center;
+  word-break: break-all;
+}
+ @media (max-width: 765px) {
+   .navbar-bg{
+     background-color: white;
+     opacity: 70%;
+
+   }
+ }
+
+
+/*@media (min-width: 610px) {
+  .chat__response{
+    margin-left: 180px;
+  }
+  
+}*/
+.chat{
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 560px;
+  background-position: center;
+}
+
 .discoveries__brain-wrapper {
   display: grid;
   justify-content: center;

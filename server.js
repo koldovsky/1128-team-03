@@ -19,10 +19,10 @@ app.use(express.static(path.resolve(__dirname, './')));
 
 app.listen(process.env.PORT || 3000, process.env.IP || '0.0.0.0');
 
-app.get('/api/chat', (req, res) => {
+/*app.get('/api/chat', (req, res) => {
     const data = fs.readFileSync('./chat.txt', {encoding: 'utf-8', flag: 'r'});
     res.send({data});
-});
+});*/
 
 app.post('/api/chat', (req, res) => {
     const {message} = req.body;

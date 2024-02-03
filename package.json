@@ -4,7 +4,7 @@
   "description": "This template repository includes preconfigured GitHub Action that will validate html files in a project with (HTMLProofer)[https://github.com/gjtorikian/html-proofer/].",
   "main": "index.js",
   "scripts": {
-    "start": "node --env-file=.env server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
