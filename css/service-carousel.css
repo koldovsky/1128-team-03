@@ -3,7 +3,7 @@
     margin: 0;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 0px 0px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Ensure the track container takes the full width and height */
@@ -80,7 +80,7 @@
     width: 15px;
     height: 15px;
     margin: 0 5px;
-    border-radius: 0%;
+    border-radius: 0;
     cursor: pointer;
     border: none;
     transition: background-color 0.3s;
@@ -133,36 +133,24 @@
 }
 
 
-h4 {
-    font-family: 'Signika', sans-serif;
-    /* Replace 'sans-serif' with a secondary font if needed */
+.card-body h4 {
     color: #212736;
     font-weight: 900;
-    font-style: semi-bold;
-    border-bottom-color: #212736 (33, 39, 54);
+    border-bottom-color: #212736; (33, 39, 54);
     font-stretch: 100%;
     text-align: center;
 }
 
-p {
-    font-family: 'Poppins-Bold', 'Poppins', sans-serif;
+.card-body p {
     font-weight: 600;
     font-style: normal;
     color: #647a81;
-    border-bottom-color: #647a81 (35, 85, 101);
+    border-bottom-color: #647a81; (35, 85, 101);
     text-align: center;
-
 }
 
-p1 {
-    font-family: 'Poppins-Bold', 'Poppins', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    color: #647a81;
-    border-bottom-color: #647a81 (35, 85, 101);
-    text-align: center;
-   
-    .no-border {
-        border: none !important; 
-        box-shadow: none !important; 
-    }
+.no-border {
+    border: none !important;
+    box-shadow: none !important;
+}
+
