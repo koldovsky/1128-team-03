@@ -69,9 +69,9 @@ p.pricing__description {
 }
 
 @media (min-width: 992px) {
-    .pricing__subtitle {
-        font-size: 3.2rem;
-    }
+  .pricing__subtitle {
+    font-size: 3.2rem;
+  }
 }
 
 /* Pricing Schedule */
@@ -138,12 +138,12 @@ p.pricing__description {
 }
 
 @media (min-width: 992px) {
-    .pricing__price {
-        font-size: 2.67rem;
-    }
-    .pricing__plan-title {
-        font-size: 1.6rem;
-      }
+  .pricing__price {
+    font-size: 2.67rem;
+  }
+  .pricing__plan-title {
+    font-size: 1.6rem;
+  }
 }
 
 /* Pricing Carousel Plan */
@@ -157,7 +157,7 @@ p.pricing__description {
 .pricing__button-left,
 .pricing__button-right {
   position: absolute;
-  top: calc(50% - 550px);
+  top: calc(50% - -7px);
   transform: translateY(-50%);
   background-color: var(--svg-bg-arrow-mobile-color);
   border: none;
@@ -167,14 +167,15 @@ p.pricing__description {
   height: 24px;
   width: 24px;
   padding: 4px;
+  z-index: 2;
 }
 
 .pricing__button-left {
-  left: 10px;
+  left: 0px;
 }
 
 .pricing__button-right {
-  right: 10px;
+  right: 0px;
 }
 
 .pricing__carousel-plan .pricing__button-prev {
@@ -190,6 +191,20 @@ p.pricing__description {
   height: 100%;
   z-index: 100;
   overflow: visible !important;
+}
+
+@media (min-width: 992px) {
+  .pricing__button-left,
+  .pricing__button-right {
+    height: 32px;
+    width: 32px;
+    padding: 8px;
+    background-color: var(--svg-bg-color);
+  }
+  .pricing__button-left:hover,
+  .pricing__button-right:hover {
+    background-color: var(--svg-bg-color-hover);
+  }
 }
 
 /* Carousel Wrapper */
@@ -216,7 +231,7 @@ p.pricing__description {
 /* Carousel Slide */
 .pricing__carousel-slide {
   text-align: left;
-  background-color: var(--details-card-bg-color);
+  background-color: var(--pricing-slide-bg-color);
   padding: 31px;
   line-height: 1.5;
   font-weight: normal;
@@ -286,12 +301,7 @@ ul li {
 /* Pricing Select Button */
 .pricing__select-button {
   margin-top: 20px;
-  background-color: var(--bn-select-color);
-  border: 1px solid var(--bn-select-color);
-  border-radius: 5px;
-  cursor: pointer;
   width: 9.35rem;
-  box-shadow: -3px -3px #dfdfdf, 0.3em 0.25em #dfdfdf;
 }
 
 .pricing__select-plan {
@@ -304,6 +314,11 @@ ul li {
   padding: 10px 15px;
   width: 100%;
   display: block;
+  background-color: var(--bn-select-color);
+  border: 1px solid var(--bn-select-color);
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: -3px -3px #dfdfdf, 0.3em 0.25em #dfdfdf;
 }
 
 .pricing__select-bn-content {
@@ -347,7 +362,7 @@ a.pricing__select-plan:hover {
 
 /* Checked Indicator Styles */
 .pricing__indicator:checked + label {
-  background-color: var(---pricing-label-checked-color);
+  background-color: var(--pricing-label-checked-color);
 }
 
 @media (min-width: 992px) {
