@@ -124,5 +124,7 @@ function App() {
 }
 
 ReactDOM.createRoot(root).render(
-    <App/>
+    <React.StrictMode>
+        <App/>
+    </React.StrictMode>
 );
