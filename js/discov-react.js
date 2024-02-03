@@ -99,14 +99,6 @@ function App() {
                     figure out."
                 </p>
             </div>
-
-           {/* <section className="chat container container-lg col-12 text-center">
-                <h2 className="mb-3" >Write your wishes here</h2>
-                <input type="text" className="chat__text form-control mb-3"/>
-                <button className="chat__button btn btn-info mr-5">Send</button>
-                <button className="chat__refresh btn btn-info">Refresh</button>
-                <pre className="chat__response"></pre>
-            </section>*/}
         </section>
     );
 }
