@@ -27,10 +27,6 @@
     flex-direction: row;
     max-height: 100%;
     gap: 20px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
@@ -70,6 +66,12 @@ p.pricing__description {
   margin-top: 25px;
   line-height: normal;
   text-align: left;
+}
+
+@media (min-width: 992px) {
+    .pricing__subtitle {
+        font-size: 3.2rem;
+    }
 }
 
 /* Pricing Schedule */
@@ -118,6 +120,30 @@ p.pricing__description {
   .pricing__time {
     padding: 8px 0 8px 15px;
   }
+  .pricing__price {
+    font-size: 2.5rem;
+  }
+  .pricing__plan-title {
+    font-size: 1.5rem;
+  }
+  .pricing__subtitle {
+    font-size: 3rem;
+  }
+  .pricing__price {
+    font-size: 2.5rem;
+  }
+  .pricing__plan-title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 992px) {
+    .pricing__price {
+        font-size: 2.67rem;
+    }
+    .pricing__plan-title {
+        font-size: 1.6rem;
+      }
 }
 
 /* Pricing Carousel Plan */
