@@ -99,26 +99,6 @@ function App() {
                     figure out."
                 </p>
             </div>
-            <section className="fact-container container">
-                <div>Facts about cats and dogs</div>
-                <select className="facts-choose">
-                    <option value="CAT">CAT</option>
-                    <option value="DOG">DOG</option>
-                </select>
-            </section>
-
-            <div className="fact-title">12</div>
-            <div className="fact-body">12</div>
-
-            <button type="button" className="btn btn-primary fact-button">New Fact!</button>
-
-            <section className="chat container">
-                <h2>Chat</h2>
-                <input type="text" className="chat__text"/>
-                <button className="chat__button">Send</button>
-                <button className="chat__refresh">Refresh</button>
-                <pre className="chat__response"></pre>
-            </section>
         </section>
     );
 }

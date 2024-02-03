@@ -12,5 +12,4 @@ function soundClickHeader() {
     audio.autoplay = true; // Автоматически запускаем
 }
 
-const buttonGreat = document.querySelector('.buttonGreat');
-buttonGreat.addEventListener('click', soundClickHeader);
+

@@ -11,13 +11,22 @@
     <script crossOrigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body>
+<body class="wishes-bg">
+
 <header data-include="header.partial.html"></header>
 <section data-include="cat-surprise.partial.html"></section>
-<div id="root"></div>
+
+<section class="chat container container-lg col-12 col-md-8 text-center mt-5">
+    <h2 class="mb-3 mt-5 h1 text-info bg-white font-weight-bold">Your wishes</h2>
+    <input type="text" class="chat__text form-control mb-3"/>
+    <button class="chat__button btn btn-info px-5">Send</button>
+    <!--<button class="chat__refresh btn btn-info">Refresh</button>-->
+    <div class="response-wrap d-grid"><p class="chat__response bg-white mx-auto"></p></div>
+</section>
 
 <footer data-include="footer.partial.html"></footer>
 
+<script src="js/chat.js"></script>
 <script src="js/index.js"></script>
 <script src="js/discov-react.js" type="text/babel"></script>
 <script src="https://unpkg.com/html-data-include@3.3.3/html-data-include.js"></script>
