@@ -1,14 +1,13 @@
 .care {
     text-align: center;
     background-image: url("../img/IMG_CARE.JPG");
-    margin: 200px;
+
     line-height: 1.8;
     background-size: cover;
     padding: 100px;
     font-family: Arial, Helvetica, sans-serif;
     filter: saturate(130%);
-    margin-right: 100px;
-    margin-left: 100px;
+
 }
 .main-title {
     font-size: 12px;
