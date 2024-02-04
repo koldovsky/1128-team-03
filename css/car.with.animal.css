@@ -5,6 +5,7 @@
   
   .carousel-container {
     display: flex;
+    max-width: 1200px;
   }
   
   .carousel-container img {
