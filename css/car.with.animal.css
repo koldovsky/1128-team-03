@@ -10,3 +10,7 @@
 .animal-carousel__indicator {
   color: black;
 }
+
+.animal-carousel-inner {
+  max-width: 1200px;
+}
