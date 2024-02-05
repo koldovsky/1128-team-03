@@ -12,7 +12,7 @@
     width: 50%;
     text-align: left;
     padding: 20px;
-    margin-left: 300px;
+    margin-left: 50px;
 }
 
 .banner__paragraph {
@@ -57,7 +57,7 @@
 }
 .button__banner--tel:hover {
   background: #235565 ;
-  color:white;
+  color:white!important;
   text-decoration: none;
 }
 
@@ -104,7 +104,4 @@
         color: white;
     }
 
-    .button__banner--tel {
-        color: white;
-    }
 }

@@ -45,13 +45,16 @@ body {
     display: grid;
     justify-content: center;
     font-family: "Poppins", sans-serif!important;
+    background-image: url("https://res2.weblium.site/res/5f66341807730000225f82ac/5f69efd3c0c73d0021df2614");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 main {
     position: relative;
 }
 .container-custom {
     max-width: 1200px;
-    padding: 0 24px;
     margin: auto;
 }
 
@@ -62,10 +65,4 @@ img {
 
 .highlight {
     color: red!important;
-}
-
-.wrapper {
-    background-image: url("https://res2.weblium.site/res/5f66341807730000225f82ac/5f69efd3c0c73d0021df2614");
-    background-size: cover;
-    background-position: center;
 }

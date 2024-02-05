@@ -154,3 +154,6 @@
     box-shadow: none !important;
 }
 
+.veterinar-carousel-inner {
+    max-width: 1000px;
+}
