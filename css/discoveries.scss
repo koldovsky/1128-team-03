@@ -1,23 +1,24 @@
-.wishes-bg{
+.wishes-bg {
   background-image: url("../img/wishes.jpeg");
   background-size: 680px;
   background-repeat: no-repeat;
   background-position: center 50px;
 }
 
-.chat__response{
+.chat__response {
   font-size: 17px;
   width: fit-content;
   text-align: center;
   word-break: break-all;
 }
- @media (max-width: 765px) {
-   .navbar-bg{
-     background-color: white;
-     opacity: 70%;
 
-   }
- }
+@media (max-width: 765px) {
+  .navbar-bg {
+    background-color: white;
+    opacity: 70%;
+
+  }
+}
 
 
 /*@media (min-width: 610px) {
@@ -26,7 +27,7 @@
   }
   
 }*/
-.chat{
+.chat {
   background-size: contain;
   background-repeat: no-repeat;
   height: 560px;
@@ -39,11 +40,14 @@
   max-width: 800px;
   justify-items: center;
   margin: auto;
+  background: rgba(255, 255, 255, .4);
+  border-radius: 75px;
 
   .discoveries__title {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
+
   }
 
   .discoveries__subtitle {
@@ -89,7 +93,8 @@
     display: grid;
     font-size: 17px;
 
-    >p{margin-bottom: 15px;
+    > p {
+      margin-bottom: 15px;
       line-height: 25px;
     }
 

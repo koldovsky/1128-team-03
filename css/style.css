@@ -140,6 +140,8 @@ h6 {
   max-width: 800px;
   justify-items: center;
   margin: auto;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 75px;
 }
 .discoveries__brain-wrapper .discoveries__title {
   font-size: 48px;
