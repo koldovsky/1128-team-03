@@ -6,8 +6,8 @@ label {
   color: rgba(0, 0, 0, 0);
   background-color: rgba(0, 0, 0, 0);
 }
-input:checked + label {
-  background-color: rgba(0, 0, 0, 0) !important;
+.faq input:checked + label {
+  background-color: rgba(0, 0, 0, 0);
 }
 .info__body {
   max-height: 0;

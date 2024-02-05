@@ -71,6 +71,7 @@ p.pricing__description {
 @media (min-width: 992px) {
   .pricing__subtitle {
     font-size: 3.2rem;
+    font-weight: 500;
   }
 }
 
@@ -200,6 +201,7 @@ p.pricing__description {
     width: 32px;
     padding: 8px;
     background-color: var(--svg-bg-color);
+    outline: none;
   }
   .pricing__button-left:hover,
   .pricing__button-right:hover {
@@ -211,7 +213,7 @@ p.pricing__description {
 .pricing__carousel-wrapper {
   display: flex;
   justify-content: start;
-  overflow-x: auto;
+  overflow-x: visible;
   margin-bottom: 20px;
 }
 
