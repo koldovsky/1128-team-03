@@ -18,6 +18,7 @@
 }
 
 .why-choose-us__item {
+  max-width: 100%;
   text-align: left;
   padding: 20px;
   display: flex;
@@ -40,6 +41,7 @@
   color: gray;
   max-width: 100%;
   word-wrap: break-word;
+  overflow-wrap: break-word;
   text-align: center;
 }
 
@@ -55,14 +57,26 @@
   font-size: 18px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 890px) {
   .why-choose-us__items {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .why-choose-us__item {
+    max-width: 100%;
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 654px) {
   .why-choose-us__items {
     grid-template-columns: 1fr;
+  }
+
+  .why-choose-us__item {
+    text-align: center;
+  }
+
+  .why-choose-us__item p {
+    text-align: justify;
   }
 }
