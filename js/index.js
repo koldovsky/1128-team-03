@@ -9,5 +9,4 @@ document.addEventListener("partialsLoaded", () => {
   import("./faq.js");
   import("./partners-carousel.js");
   import("./navigation.js");
-  import("./care.js")
 });
